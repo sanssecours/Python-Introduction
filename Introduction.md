@@ -46,11 +46,14 @@ In der Praxis verwendet man aber üblicherweise einen speziell für die Programm
 
 ### Command Line
 
-Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (GUI: Graphical User Interface) verwendet ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (CLI: Command Line Interface) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte (wiederum mittels Programmierung) automatisieren kann.
+Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (**GUI: Graphical User Interface**) verwendet ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (**CLI: Command Line Interface**) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte wiederum mittels Programmierung automatisieren kann. Das heißt auch bei den Text den man bei einer textbasierten Oberfläche eingibt handelt es sich um Code in einer bestimmten Programmiersprache.
 
-Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier einmal an wie man unter Windows einen Texteditor mittels CLI installiert. Dazu installieren wir als erstes [„Windows Terminal“](https://github.com/microsoft/terminal) in der Powershell (einem Interpreter für die Programmiersprache PowerShell).
+Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier einmal an wie man unter Windows einen Texteditor mittels CLI installiert. Dazu installieren wir als erstes [„Windows Terminal“](https://github.com/microsoft/terminal) in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die Programmiersprache [PowerShell](https://en.wikipedia.org/wiki/PowerShell).
 
 1. Das Programm PowerShell öffnen
+   1. „Windows-Taste“ drücken
+   2. „PowerShell“ eingeben
+   3. Mit „Return“ (<kbd>⏎</kbd>) bestätigen
 2. Den folgenden Text (Code) in das PowerShell-Fenster einfügen
 
    ```sh
@@ -81,6 +84,41 @@ Nun wollen wir in einem zweiten Schritt einen Code-Editor installieren. Ein beli
    Die Gänsefüßchen (Single Quotes) sorgen dabei dafür, dass der Text als als Ganzes interpretiert wird und nicht als die 3 Argumente `Visual`, `Studio` und `Code`.
 
 2. Die Ausgabe des obigen Befehls/Code sollte nun die gefunden Pakete/Software anzeigen
+
+   ```
+   Name                                  Id                                  Version Source
+   ------------------------------------------------------------------------------------------
+   Visual Studio Code                    XP9KHM4BK9FZ7Q                      Unknown msstore
+   Visual Studio Code - Insiders         XP8LFCZM790F6B                      Unknown msstore
+   Microsoft Visual Studio Code          Microsoft.VisualStudioCode          1.65.2  winget
+   Microsoft Visual Studio Code Insiders Microsoft.VisualStudioCode.Insiders 1.66.0  winget
+   ```
+
+3. Wir entscheiden uns für das Paket mit der Id `Microsoft.VisualStudioCode` und installieren dieses mit dem Befehl
+
+   ```sh
+   winget install -e --id Microsoft.VisualStudioCode
+   ```
+
+   Am obigen Befehl sehen wir, dass die Reihenfolge von Option (`e` und `id`) normalerweise keine Reihenfolge spielt. Weiters können wir feststellen, dass wir statt des Gleichheitszeichen zur Trennung der Option `id` und des dazugehörigen Arguments (`Microsoft.VisualStudioCode`) auch einfach Leerzeichen verwendet werden können.
+
+Bevor wir nun Visual Studio Code öffnen und unser erstes Python-Programm erstellen sollten wir noch den Python-Interpreter installieren.
+
+1. Eine Suche mittels
+
+   ```sh
+   winget search Python
+   ```
+
+   zeigt und, dass die richtige Id des Programms wohl 'Python.Python.3' ist
+
+2. Wir installieren Python 3 mittels:
+
+   ```sh
+   winget install Python.Python.3 -e
+   ```
+
+   Der obige Befehl zeigt uns, dass man die Option `id` auch weglassen kann und `winget` in diesem Fall annimmt, dass es sich beim Argument um den Namen des Pakets handelt.
 
 ### Interpreter/Compiler
 
