@@ -130,6 +130,25 @@ Write-Output "Hello, World!"
 
 Die doppelten Anführungszeichen erfüllen dabei den gleichen Zweck wie die einfachen Anführungszeichen beim Befehl `winget search 'Visual Studio Code'`. Der Text `Hello, World!` wird als einzelnes Argument interpretiert und nicht als die zwei Argumente `Hello,` und `World!`.
 
-### Interpreter/Compiler
+### Interpreter
+
+Nachdem wir „Hello, World!“ schon in PowerShell geschrieben haben, wollen wir das gleiche Programm nun in Python implementieren. Der Code dafür kann z.B. so aussehen
+
+```py
+print("Hello, World!")
+```
+
+Wir sehen, dass der übliche Befehl (Funktion) zum Ausgeben eines Texts (String) in Python `print` heißt. Das Argument des Befehls `"Hello, World!"` wird hier, wie auch in der PowerShell, unter doppelte (oder einfache) Anführungszeichen gesetzt. Damit wird in Python angezeigt, dass es sich um einen Text (String/Zeichenkette) und nicht um einen Befehl (wie z.B. bei der Funktion `print`) handelt.
+
+Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine der Möglichkeiten ist die Ausführung direkt im Python-Interpreter.
+
+1. Python-Interpreter öffnen
+
+   - Möglichkeit 1: PowerShell öffnen, den Befehl `python` eingeben und mittels <kbd>⏎</kbd> (Return) bestätigen
+   - Möglichkeit 2: Mit „Windows-Taste“ die Suche öffnen, den Text “Python” eingeben um nach den Interpreter zu suchen und diesen öffnen
+
+2. Den Code von oben in den Interpreter kopieren und dann mittels <kbd>⏎</kbd> (Return) ausführen
+
+3. Der Text “Hello, World!” wird unter dem Code ausgegeben
 
 ### IDE
