@@ -53,6 +53,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 </head>
@@ -70,8 +134,8 @@
 <li class="chapter" data-level="1" data-path=""><a href="#grundlagen"><i class="fa fa-check"></i><b>1</b> Grundlagen<span></span></a><ul>
 <li class="chapter" data-level="1.1" data-path=""><a href="#die-werkzeuge"><i class="fa fa-check"></i><b>1.1</b> Die Werkzeuge<span></span></a><ul>
 <li class="chapter" data-level="1.1.1" data-path=""><a href="#editor"><i class="fa fa-check"></i><b>1.1.1</b> Editor<span></span></a></li>
-<li class="chapter" data-level="1.1.2" data-path=""><a href="#interpretercompiler"><i class="fa fa-check"></i><b>1.1.2</b> Interpreter/Compiler<span></span></a></li>
-<li class="chapter" data-level="1.1.3" data-path=""><a href="#command-line"><i class="fa fa-check"></i><b>1.1.3</b> Command Line<span></span></a></li>
+<li class="chapter" data-level="1.1.2" data-path=""><a href="#command-line"><i class="fa fa-check"></i><b>1.1.2</b> Command Line<span></span></a></li>
+<li class="chapter" data-level="1.1.3" data-path=""><a href="#interpreter"><i class="fa fa-check"></i><b>1.1.3</b> Interpreter<span></span></a></li>
 <li class="chapter" data-level="1.1.4" data-path=""><a href="#ide"><i class="fa fa-check"></i><b>1.1.4</b> IDE<span></span></a></li>
 </ul></li>
 </ul></li>
@@ -115,12 +179,85 @@
 <h2><span class="header-section-number">1.1</span> Die Werkzeuge<a href="#die-werkzeuge" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="editor" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.1.1</span> Editor<a href="#editor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="interpretercompiler" class="section level3 hasAnchor">
-<h3><span class="header-section-number">1.1.2</span> Interpreter/Compiler<a href="#interpretercompiler" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Wie schon in einführenden Teil beschrieben ist ein Text-Editor oder auch kurz Editor eines der wesentlichen Werkzeuge eines Programmierers. Von einer Textverarbeitung (wie z.B. “Word”, “LibreOffice” oder “Google Docs”) unterscheidet sich ein Texteditor, dadurch, dass man damit wirklich nur Text schreiben kann. Eine Formatierung oder das Einfügen von Bildern ist nicht möglich.</p>
+<p>Als essentielles Werkzeug ist ein Texteditor praktisch Teil der Standard-Installation von vielen Betriebssystemen:</p>
+<ul>
+<li>Linux :z.B. <a href="https://en.wikipedia.org/wiki/Gedit">gedit</a>, <a href="https://en.wikipedia.org/wiki/Kate_(text_editor)">Kate</a>, <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>, <a href="https://en.wikipedia.org/wiki/Emacs">Emacs</a>, <a href="https://www.gnu.org/fun/jokes/ed-msg.html">ed</a></li>
+<li>macOS: <a href="https://en.wikipedia.org/wiki/TextEdit">TextEdit</a>, <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>, <a href="https://en.wikipedia.org/wiki/Emacs">Emacs</a>, <a href="https://www.gnu.org/fun/jokes/ed-msg.html">ed</a></li>
+<li>Windows <a href="https://en.wikipedia.org/wiki/Windows_Notepad">Notepad</a></li>
+</ul>
+<p>Theoretisch wäre es also möglich z.B. einfach Notepad zu verwenden und darin zukünftige Programmier-Projekte zu verwirklichen.</p>
+<p><img src="Pictures/Notepad.png" /></p>
+<p>In der Praxis verwendet man aber üblicherweise einen speziell für die Programmierung angepassten Texteditor (manchmal auch Code-Editor genannt).</p>
 </div>
 <div id="command-line" class="section level3 hasAnchor">
-<h3><span class="header-section-number">1.1.3</span> Command Line<a href="#command-line" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">1.1.2</span> Command Line<a href="#command-line" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (<strong>GUI: Graphical User Interface</strong>) verwendet ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (<strong>CLI: Command Line Interface</strong>) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte wiederum mittels Programmierung automatisieren kann. Das heißt auch bei den Text den man bei einer textbasierten Oberfläche eingibt handelt es sich um Code in einer bestimmten Programmiersprache.</p>
+<p>Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier einmal an wie man unter Windows einen Texteditor mittels CLI installiert. Dazu installieren wir als erstes <a href="https://github.com/microsoft/terminal">„Windows Terminal“</a> in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die Programmiersprache <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Das Programm PowerShell öffnen</p>
+<ol style="list-style-type: decimal">
+<li>„Windows-Taste“ drücken</li>
+<li>„PowerShell“ eingeben</li>
+<li>Mit „Return“ (<kbd>⏎</kbd>) bestätigen</li>
+</ol></li>
+<li><p>Den folgenden Text (Code) in das PowerShell-Fenster einfügen</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">winget</span> install --id=Microsoft.WindowsTerminal -e</span></code></pre></div>
+<p>und dann mittels <kbd>⏎</kbd> (Return) ausführen.</p>
+<ul>
+<li>Bei <code>winget</code> handelt es sich hierbei um ein Programm (<strong>Befehl</strong>) zum Suchen und Installieren von Software, die in diesem Zusammenhang auch als <strong>Paket</strong> bezeichnet wird.</li>
+<li>Mit dem <strong>(Sub-)Befehl</strong> (Argument) <code>install</code> teilt man <code>winget</code> mit, dass es ein Paket installieren soll.</li>
+<li>Der Name des Pakets wird mit der (Long-)<strong>Option</strong> (<code>--</code>) <code>id</code> mit dem <strong>Argument</strong> <code>Microsoft.WindowsTerminal</code> spezifiziert</li>
+<li>Die (Short-)<strong>Option</strong> (<code>-</code>) <code>e</code> wiederum gibt an, dass das das genau (exakt) das Paket <code>Microsoft.WindowsTerminal</code> installiert werden soll</li>
+</ul></li>
+<li><p>Zeit zum auf die Schulter klopfen, nachdem du im 2. Schritt (wahrscheinlich) dein erstes PowerShell-„Programm“ geschrieben hast</p></li>
+</ol>
+<p>Um zu sehen ob die Installation von „Windows Terminal“ funktioniert hat suchen wird nach dem Programm Windows Terminal (einem mehr oder weniger modernerer Ersatz des Programms PowerShell) und führen es aus.</p>
+<p><img src="Pictures/Windows%20Terminal.png" /></p>
+<p>Nun wollen wir in einem zweiten Schritt einen Code-Editor installieren. Ein beliebtest Programm ist dabei <a href="https://github.com/microsoft/vscode">Visual Studio Code</a> von Microsoft.</p>
+<ol style="list-style-type: decimal">
+<li><p>Da wir nicht genau wissen wie das Paket für Visual Studio heißt suchen wir mit dem Befehl Kommando/Argument <code>search</code> nach dem Paket</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">winget</span> search <span class="st">&#39;Visual Studio Code&#39;</span></span></code></pre></div>
+<p>Die Anführungszeichen (Single Quotes) sorgen dabei dafür, dass der Text als als Ganzes interpretiert wird und nicht als die 3 Argumente <code>Visual</code>, <code>Studio</code> und <code>Code</code>.</p></li>
+<li><p>Die Ausgabe des obigen Befehls/Code sollte nun die gefunden Pakete/Software anzeigen</p>
+<pre><code>Name                                  Id                                  Version Source
+------------------------------------------------------------------------------------------
+Visual Studio Code                    XP9KHM4BK9FZ7Q                      Unknown msstore
+Visual Studio Code - Insiders         XP8LFCZM790F6B                      Unknown msstore
+Microsoft Visual Studio Code          Microsoft.VisualStudioCode          1.65.2  winget
+Microsoft Visual Studio Code Insiders Microsoft.VisualStudioCode.Insiders 1.66.0  winget</code></pre></li>
+<li><p>Wir entscheiden uns für das Paket mit der Id <code>Microsoft.VisualStudioCode</code> und installieren dieses mit dem Befehl</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">winget</span> install -e --id Microsoft.VisualStudioCode</span></code></pre></div>
+<p>Am obigen Befehl sehen wir, dass die Reihenfolge von Option (<code>e</code> und <code>id</code>) normalerweise keine Reihenfolge spielt. Weiters können wir feststellen, dass wir statt des Gleichheitszeichen zur Trennung der Option <code>id</code> und des dazugehörigen Arguments (<code>Microsoft.VisualStudioCode</code>) auch einfach Leerzeichen verwendet werden können.</p></li>
+</ol>
+<p>Bevor wir nun Visual Studio Code öffnen und unser erstes Python-Programm erstellen sollten wir noch den Python-Interpreter installieren.</p>
+<ol style="list-style-type: decimal">
+<li><p>Eine Suche mittels</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">winget</span> search Python</span></code></pre></div>
+<p>zeigt und, dass die richtige Id des Programms wohl ‘Python.Python.3’ ist</p></li>
+<li><p>Wir installieren Python 3 mittels:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="ex">winget</span> install Python.Python.3 -e</span></code></pre></div>
+<p>Der obige Befehl zeigt uns, dass man die Option <code>id</code> auch weglassen kann und <code>winget</code> in diesem Fall annimmt, dass es sich beim Argument um den Namen des Pakets handelt.</p></li>
+</ol>
+<p>Zum Schluss unser ersten Ausflug in die Programmiersprache PowerShell wollen wir noch das Programm „<a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello, World!</a>“ schreiben. Dabei handelt es sich um ein ein typische erstes Programm, dass den Text (String) „Hello, World!“ auf dem Bildschirm ausgibt. Im <a href="https://en.wikipedia.org/wiki/PowerShell">Wikipedia-Artikel zu PowerShell</a> sehen wir, dass der Befehl <code>Write-Output</code> verwendet werden kann um einen Text auf dem Bildschirm auszugeben. Eine typische Implementierung (Realisierung eines Problems in Code) von „Hello, World!“ in PowerShell-Code könnte also z.B. so aussehen:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="ex">Write-Output</span> <span class="st">&quot;Hello, World!&quot;</span></span></code></pre></div>
+<p>Die doppelten Anführungszeichen erfüllen dabei den gleichen Zweck wie die einfachen Anführungszeichen beim Befehl <code>winget search 'Visual Studio Code'</code>. Der Text <code>Hello, World!</code> wird als einzelnes Argument interpretiert und nicht als die zwei Argumente <code>Hello,</code> und <code>World!</code>.</p>
+</div>
+<div id="interpreter" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.1.3</span> Interpreter<a href="#interpreter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Nachdem wir „Hello, World!“ schon in PowerShell geschrieben haben, wollen wir das gleiche Programm nun in Python implementieren. Der Code dafür kann z.B. so aussehen</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, World!&quot;</span>)</span></code></pre></div>
+<p>Wir sehen, dass der übliche Befehl (Funktion) zum Ausgeben eines Texts (String) in Python <code>print</code> heißt. Das Argument des Befehls <code>"Hello, World!"</code> wird hier, wie auch in der PowerShell, unter doppelte (oder einfache) Anführungszeichen gesetzt. Damit wird in Python angezeigt, dass es sich um einen Text (String/Zeichenkette) und nicht um einen Befehl (wie z.B. bei der Funktion <code>print</code>) handelt.</p>
+<p>Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine der Möglichkeiten ist die Ausführung direkt im Python-Interpreter.</p>
+<ol style="list-style-type: decimal">
+<li><p>Python-Interpreter öffnen</p>
+<ul>
+<li>Möglichkeit 1: PowerShell öffnen, den Befehl <code>python</code> eingeben und mittels <kbd>⏎</kbd> (Return) bestätigen</li>
+<li>Möglichkeit 2: Mit „Windows-Taste“ die Suche öffnen, den Text “Python” eingeben um nach den Interpreter zu suchen und diesen öffnen</li>
+</ul></li>
+<li><p>Den Code von oben in den Interpreter kopieren und dann mittels <kbd>⏎</kbd> (Return) ausführen</p></li>
+<li><p>Der Text “Hello, World!” wird unter dem Code ausgegeben</p></li>
+</ol>
 </div>
 <div id="ide" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.1.4</span> IDE<a href="#ide" class="anchor-section" aria-label="Anchor link to header"></a></h3>
