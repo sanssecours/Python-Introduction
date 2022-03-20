@@ -48,7 +48,9 @@ In der Praxis verwendet man aber üblicherweise einen speziell für die Programm
 
 Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (**GUI: Graphical User Interface**) verwendet ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (**CLI: Command Line Interface**) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte wiederum mittels Programmierung automatisieren kann. Das heißt auch bei den Text den man bei einer textbasierten Oberfläche eingibt handelt es sich um Code in einer bestimmten Programmiersprache.
 
-Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier einmal an wie man unter Windows einen Texteditor mittels CLI installiert. Dazu installieren wir als erstes [„Windows Terminal“](https://github.com/microsoft/terminal) in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die Programmiersprache [PowerShell](https://en.wikipedia.org/wiki/PowerShell).
+Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier einmal an wie man unter Windows einen Texteditor mittels CLI installiert. Dazu installieren wir als erstes [„Windows Terminal“](https://github.com/microsoft/terminal) in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die Programmiersprache [PowerShell][].
+
+[powershell]: https://en.wikipedia.org/wiki/PowerShell
 
 1. Das Programm PowerShell öffnen
    1. „Windows-Taste“ drücken
@@ -81,7 +83,7 @@ Nun wollen wir in einem zweiten Schritt einen Code-Editor installieren. Ein beli
    winget search 'Visual Studio Code'
    ```
 
-   Die Gänsefüßchen (Single Quotes) sorgen dabei dafür, dass der Text als als Ganzes interpretiert wird und nicht als die 3 Argumente `Visual`, `Studio` und `Code`.
+   Die Anführungszeichen (Single Quotes) sorgen dabei dafür, dass der Text als als Ganzes interpretiert wird und nicht als die 3 Argumente `Visual`, `Studio` und `Code`.
 
 2. Die Ausgabe des obigen Befehls/Code sollte nun die gefunden Pakete/Software anzeigen
 
@@ -119,6 +121,14 @@ Bevor wir nun Visual Studio Code öffnen und unser erstes Python-Programm erstel
    ```
 
    Der obige Befehl zeigt uns, dass man die Option `id` auch weglassen kann und `winget` in diesem Fall annimmt, dass es sich beim Argument um den Namen des Pakets handelt.
+
+Zum Schluss unser ersten Ausflug in die Programmiersprache PowerShell wollen wir noch das Programm „[Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)“ schreiben. Dabei handelt es sich um ein ein typische erstes Programm, dass den Text (String) „Hello, World!“ auf dem Bildschirm ausgibt. Im [Wikipedia-Artikel zu PowerShell][powershell] sehen wir, dass der Befehl `Write-Output` verwendet werden kann um einen Text auf dem Bildschirm auszugeben. Eine typische Implementierung (Realisierung eines Problems in Code) von „Hello, World!“ in PowerShell-Code könnte also z.B. so aussehen:
+
+```sh
+Write-Output "Hello, World!"
+```
+
+Die doppelten Anführungszeichen erfüllen dabei den gleichen Zweck wie die einfachen Anführungszeichen beim Befehl `winget search 'Visual Studio Code'`. Der Text `Hello, World!` wird als einzelnes Argument interpretiert und nicht als die zwei Argumente `Hello,` und `World!`.
 
 ### Interpreter/Compiler
 
