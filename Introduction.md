@@ -26,7 +26,7 @@ Wie schon in einführenden Teil beschrieben ist ein Text-Editor oder auch kurz E
 
 Als essentielles Werkzeug ist ein Texteditor Teil der Standard-Installation vieler Betriebssystemen:
 
-- Linux :z.B. [gedit][], [Kate][], [Vim][], [Emacs][], [ed][]
+- Linux: [gedit][], [Kate][], [Vim][], [Emacs][], [ed][]
 - macOS: [TextEdit][], [Vim][], [Emacs][], [ed][]
 - Windows [Notepad][]
 
