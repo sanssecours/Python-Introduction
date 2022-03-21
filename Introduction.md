@@ -149,11 +149,21 @@ Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine de
 
 2. Den Code von oben in den Interpreter kopieren und dann mittels <kbd>⏎</kbd> (Return) ausführen
 
-3. Der Text “Hello, World!” wird unter dem Code ausgegeben
+3. Der Text „Hello, World!“ wird unter dem Code ausgegeben
 
    ```
    >>> print("Hello, World!")
    Hello, World!
    ```
+
+Bisher haben wir Code nur direkt im Interpreter ausgeführt ohne diesen vorher in einer Text-Datei zu speichern. Angesichts dessen, dass der bisherige Code nur eine Zeile lang war – dieser Code wird auch oft als “one liner” bezeichnet, war das auch nicht wirklich nötig.
+
+Nun wollen wir den Code unseres „Hello, World!“-Programms mittels Visual Studio Code speichern und ausführen.
+
+1. Visual Studio Code öffnen
+2. Eine neue Datei erstellen: <kbd>Ctrl</kbd> + <kbd>N</kbd>
+3. Den Code von „Hello, World!“ einfügen
+4. Die Datei mittels <kbd>Ctrl</kbd> + <kbd>N</kbd> unter dem Namen `hello.py` speichern
+5. Mittels „Run“ → „Run Without Debugging“ ausführen
 
 ### IDE
