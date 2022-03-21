@@ -24,7 +24,7 @@ knitr::include_graphics("Pictures/Programming-Process.svg", auto_pdf = TRUE)
 
 Wie schon in einführenden Teil beschrieben ist ein Text-Editor oder auch kurz Editor eines der wesentlichen Werkzeuge eines Programmierers. Von einer Textverarbeitung (wie z.B. “Word”, “LibreOffice” oder “Google Docs”) unterscheidet sich ein Texteditor, dadurch, dass man damit wirklich nur Text schreiben kann. Eine Formatierung oder das Einfügen von Bildern ist nicht möglich.
 
-Als essentielles Werkzeug ist ein Texteditor praktisch Teil der Standard-Installation von vielen Betriebssystemen:
+Als essentielles Werkzeug ist ein Texteditor Teil der Standard-Installation vieler Betriebssystemen:
 
 - Linux :z.B. [gedit][], [Kate][], [Vim][], [Emacs][], [ed][]
 - macOS: [TextEdit][], [Vim][], [Emacs][], [ed][]
