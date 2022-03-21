@@ -151,4 +151,9 @@ Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine de
 
 3. Der Text “Hello, World!” wird unter dem Code ausgegeben
 
+   ```
+   >>> print("Hello, World!")
+   Hello, World!
+   ```
+
 ### IDE
