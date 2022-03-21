@@ -46,9 +46,9 @@ In der Praxis verwendet man aber üblicherweise einen speziell für die Programm
 
 ### Command Line
 
-Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (**GUI: Graphical User Interface**) verwendet ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (**CLI: Command Line Interface**) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte wiederum mittels Programmierung automatisieren kann. Das heißt auch bei den Text den man bei einer textbasierten Oberfläche eingibt handelt es sich um Code in einer bestimmten Programmiersprache.
+Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (**GUI: Graphical User Interface**) verwendet, ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (**CLI: Command Line Interface**) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte, wiederum mittels Programmierung, automatisieren kann. Das heißt auch bei den Text den man bei einer textbasierten Oberfläche eingibt handelt es sich um Code in einer bestimmten Programmiersprache.
 
-Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier einmal an wie man unter Windows einen Texteditor mittels CLI installiert. Dazu installieren wir als erstes [„Windows Terminal“](https://github.com/microsoft/terminal) in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die Programmiersprache [PowerShell][].
+Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier an wie man unter Windows Software mittels CLI installiert. Dazu installieren wir als erstes [„Windows Terminal“](https://github.com/microsoft/terminal) in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die Programmiersprache [PowerShell][].
 
 [powershell]: https://en.wikipedia.org/wiki/PowerShell
 
@@ -112,7 +112,7 @@ Bevor wir nun Visual Studio Code öffnen und unser erstes Python-Programm erstel
    winget search Python
    ```
 
-   zeigt und, dass die richtige Id des Programms wohl 'Python.Python.3' ist
+   zeigt und, dass die richtige Id des Programms wohl `Python.Python.3` ist
 
 2. Wir installieren Python 3 mittels:
 
@@ -120,9 +120,9 @@ Bevor wir nun Visual Studio Code öffnen und unser erstes Python-Programm erstel
    winget install Python.Python.3 -e
    ```
 
-   Der obige Befehl zeigt uns, dass man die Option `id` auch weglassen kann und `winget` in diesem Fall annimmt, dass es sich beim Argument um den Namen des Pakets handelt.
+   Der obige Befehl zeigt uns, dass man die Option `id` auch weglassen kann und `winget` in diesem Fall annimmt, dass es sich beim Argument `Python.Python.3` um den Namen des Pakets handelt.
 
-Zum Schluss unser ersten Ausflug in die Programmiersprache PowerShell wollen wir noch das Programm „[Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)“ schreiben. Dabei handelt es sich um ein ein typische erstes Programm, dass den Text (String) „Hello, World!“ auf dem Bildschirm ausgibt. Im [Wikipedia-Artikel zu PowerShell][powershell] sehen wir, dass der Befehl `Write-Output` verwendet werden kann um einen Text auf dem Bildschirm auszugeben. Eine typische Implementierung (Realisierung eines Problems in Code) von „Hello, World!“ in PowerShell-Code könnte also z.B. so aussehen:
+Zum Schluss unser ersten Ausflug in die Programmiersprache PowerShell wollen wir noch das Programm „[Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)“ schreiben. Dabei handelt es sich um ein ein typische erstes Programm, dass den Text (String) „Hello, World!“ auf dem Bildschirm ausgibt. Im [Wikipedia-Artikel zur Programmiersprache PowerShell][powershell] sehen wir, dass der Befehl `Write-Output` verwendet werden kann um einen Text auf dem Bildschirm auszugeben. Eine typische Implementierung (Realisierung eines Problems in Code) von „Hello, World!“ in PowerShell-Code könnte also z.B. so aussehen:
 
 ```sh
 Write-Output "Hello, World!"
