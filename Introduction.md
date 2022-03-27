@@ -188,3 +188,14 @@ Beliebte IDEs für die Entwicklung von Python-Code sind z.B.
 
 - [Spyder](https://www.spyder-ide.org) oder
 - [PyCharm](https://www.jetbrains.com/pycharm/).
+
+## Wiederholungsfragen
+
+1. Installiere das Programm [“PowerToys”](https://docs.microsoft.com/en-us/windows/powertoys/) mittels `winget`
+2. Deinstalliere “PowerToys” mittels `winget uninstall`
+3. Finde raus wie du mittels `winget` Software auf deinem Computer auf den neuesten Stand bringen kannst
+4. Nenne zumindest zwei Programmiersprachen
+5. Was unterscheidet einen Interpreter von einem Compiler?
+6. Schreibe ein Programm das den Text “Goodby Cruel World” ausgibt in
+   1. PowerShell
+   2. Python
