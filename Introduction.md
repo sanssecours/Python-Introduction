@@ -174,3 +174,17 @@ Nun wollen wir den Code unseres „Hello, World!“-Programms mittels Visual Stu
 5. Mittels „Run“ → „Run Without Debugging“ ausführen
 
 ### IDE
+
+Bei einem “Integrated Development Environment” handelt es sich um ein Programm, dass den Alltag eines Programmierers erleichtern soll. Dazu bündelt dieses üblicherweise Werkzeuge wie z.B.
+
+- Code-Editor,
+- Command-Line-Interface,
+- Debugger (Programm um Fehler in Programmen zu finden und zu beheben), und
+- Versionsverwaltung (zum Verwalten von Code-Änderungen)
+
+in einer Oberfläche. Der Übergang von Texteditor mit Zusatz-Fähigkeiten wie z.B. das Ausführen des Codes in einem Schritt zu einer IDE ist dabei relativ fließend. Manche Leute würden z.B. Visual Studio Code auch schon als IDE bezeichnen.
+
+Beliebte IDEs für die Entwicklung von Python-Code sind z.B.
+
+- [Spyder](https://www.spyder-ide.org) oder
+- [PyCharm](https://www.jetbrains.com/pycharm/).
