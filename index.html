@@ -4,22 +4,23 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Python-Einführung.knit</title>
-  <meta name="description" content="" />
+  <title>Python-Einführung</title>
+  <meta name="description" content="Python Programming Introduction" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Python-Einführung.knit" />
+  <meta property="og:title" content="Python-Einführung" />
   <meta property="og:type" content="book" />
   
-  
-  
+  <meta property="og:description" content="Python Programming Introduction" />
+  <meta name="github-repo" content="sanssecours/Python-Introduction" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Python-Einführung.knit" />
+  <meta name="twitter:title" content="Python-Einführung" />
   
-  
+  <meta name="twitter:description" content="Python Programming Introduction" />
   
 
+<meta name="author" content="René Schwaiger" />
 
 
 
@@ -138,6 +139,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.1.3" data-path=""><a href="#interpreter"><i class="fa fa-check"></i><b>1.1.3</b> Interpreter<span></span></a></li>
 <li class="chapter" data-level="1.1.4" data-path=""><a href="#ide"><i class="fa fa-check"></i><b>1.1.4</b> IDE<span></span></a></li>
 </ul></li>
+<li class="chapter" data-level="1.2" data-path=""><a href="#wiederholungsfragen"><i class="fa fa-check"></i><b>1.2</b> Wiederholungsfragen<span></span></a></li>
 </ul></li>
 </ul>
 
@@ -148,7 +150,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Python-Einführung</a>
           </h1>
         </div>
 
@@ -156,8 +158,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<!--bookdown:title:end-->
-<!--bookdown:title:start-->
+<div id="header">
+<h1 class="title">Python-Einführung</h1>
+<p class="author"><em>René Schwaiger</em></p>
+</div>
 <div id="grundlagen" class="section level1 hasAnchor">
 <h1><span class="header-section-number">1</span> Grundlagen<a href="#grundlagen" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Wie bei jedem Handwerk gibt es auch beim Programmieren gewisse Werkzeuge die man benötigt um eine Applikation zu erstellen. Das erste Werkzeug, dass ein angehender Programmierer verwendet ist wahrscheinlich ein <strong>Text-Editor</strong>. In diesem Programm schreibt man dann wie schon der Name andeutet Text, so-genannten <strong>Code</strong>, in einer bestimmten <strong>Programmiersprache</strong>. Je nach Programmiersprache beschreibt der Code entweder</p>
@@ -192,8 +196,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="command-line" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.1.2</span> Command Line<a href="#command-line" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (<strong>GUI: Graphical User Interface</strong>) verwendet, ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (<strong>CLI: Command Line Interface</strong>) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte, wiederum mittels Programmierung, automatisieren kann. Das heißt auch bei den Text den man bei einer textbasierten Oberfläche eingibt handelt es sich um Code in einer bestimmten Programmiersprache.</p>
-<p>Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier an wie man unter Windows Software mittels CLI installiert. Dazu installieren wir als erstes <a href="https://github.com/microsoft/terminal">„Windows Terminal“</a> in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die Programmiersprache <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a>.</p>
+<p>Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (<strong>GUI: Graphical User Interface</strong>) verwendet, ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (<strong>CLI: Command Line Interface</strong>) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte, wiederum mittels Programmierung, automatisieren kann. Das heißt auch bei den <strong>Text</strong> den man bei einer textbasierten Oberfläche eingibt handelt es sich um <strong>Code in einer bestimmten Programmiersprache</strong>.</p>
+<p>Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier an wie man unter Windows Software mittels CLI installiert. Dazu installieren wir als erstes <a href="https://github.com/microsoft/terminal">„Windows Terminal“</a> in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die <strong>Programmiersprache <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a></strong>.</p>
 <ol style="list-style-type: decimal">
 <li><p>Das Programm PowerShell öffnen</p>
 <ol style="list-style-type: decimal">
@@ -245,10 +249,10 @@ Microsoft Visual Studio Code Insiders Microsoft.VisualStudioCode.Insiders 1.66.0
 </div>
 <div id="interpreter" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.1.3</span> Interpreter<a href="#interpreter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Nachdem wir „Hello, World!“ schon in PowerShell geschrieben haben, wollen wir das gleiche Programm nun in Python implementieren. Der Code dafür kann z.B. so aussehen</p>
+<p>Nachdem wir „Hello, World!“ schon in PowerShell geschrieben haben, wollen wir das gleiche Programm nun in der <strong>Programmiersprache Python</strong> implementieren. Der Code dafür kann z.B. so aussehen</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, World!&quot;</span>)</span></code></pre></div>
-<p>Wir sehen, dass der übliche Befehl (Funktion) zum Ausgeben eines Texts (String) in Python <code>print</code> heißt. Das Argument des Befehls <code>"Hello, World!"</code> wird hier, wie auch in der PowerShell, unter doppelte (oder einfache) Anführungszeichen gesetzt. Damit wird in Python angezeigt, dass es sich um einen Text (String/Zeichenkette) und nicht um einen Befehl (wie z.B. bei der Funktion <code>print</code>) handelt.</p>
-<p>Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine der Möglichkeiten ist die Ausführung direkt im Python-Interpreter.</p>
+<p>Wir sehen, dass der übliche Befehl (Funktion) zum Ausgeben eines Texts (<strong>String</strong>) in Python <code>print</code> heißt. Das Argument des Befehls <code>"Hello, World!"</code> wird hier, wie auch in der PowerShell, unter doppelte (oder einfache) Anführungszeichen gesetzt. Damit wird in Python angezeigt, dass es sich um einen Text (String/Zeichenkette) und nicht um einen Befehl (wie z.B. bei der Funktion <code>print</code>) handelt.</p>
+<p>Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine der Möglichkeiten ist die Ausführung direkt im <strong>Python-Interpreter</strong>.</p>
 <ol style="list-style-type: decimal">
 <li><p>Python-Interpreter öffnen</p>
 <ul>
@@ -260,20 +264,48 @@ Microsoft Visual Studio Code Insiders Microsoft.VisualStudioCode.Insiders 1.66.0
 <pre><code>&gt;&gt;&gt; print(&quot;Hello, World!&quot;)
 Hello, World!</code></pre></li>
 </ol>
-<p>Bisher haben wir Code nur direkt im Interpreter ausgeführt ohne diesen vorher in einer Text-Datei zu speichern. Angesichts dessen, dass der bisherige Code nur eine Zeile lang war – dieser Code wird auch oft als “one liner” bezeichnet, war das auch nicht wirklich nötig.</p>
+<p>Bisher haben wir Code nur direkt im Interpreter ausgeführt ohne diesen vorher in einer Text-Datei zu speichern. Angesichts dessen, dass der bisherige Code nur eine Zeile lang war – dieser Code wird auch oft als “one liner” bezeichnet – war das auch nicht wirklich nötig.</p>
 <p>Nun wollen wir den Code unseres „Hello, World!“-Programms mittels Visual Studio Code speichern und ausführen.</p>
 <ol style="list-style-type: decimal">
 <li>Visual Studio Code öffnen</li>
 <li>Eine neue Datei erstellen: <kbd>Ctrl</kbd> + <kbd>N</kbd></li>
-<li>Den Code von „Hello, World!“ einfügen</li>
-<li>Die Datei mittels <kbd>Ctrl</kbd> + <kbd>N</kbd> unter dem Namen <code>hello.py</code> speichern</li>
+<li>Den Code <code>print("Hello, World!")</code> einfügen</li>
+<li>Die Datei mittels <kbd>Ctrl</kbd> + <kbd>S</kbd> unter dem Namen <code>hello.py</code> speichern</li>
 <li>Mittels „Run“ → „Run Without Debugging“ ausführen</li>
 </ol>
 </div>
 <div id="ide" class="section level3 hasAnchor">
 <h3><span class="header-section-number">1.1.4</span> IDE<a href="#ide" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-
+<p>Bei einem “Integrated Development Environment” handelt es sich um ein Programm, dass den Alltag eines Programmierers erleichtern soll. Dazu bündelt dieses üblicherweise Werkzeuge wie z.B.</p>
+<ul>
+<li>Code-Editor,</li>
+<li>Command-Line-Interface,</li>
+<li>Debugger (Programm um Fehler in Programmen zu finden und zu beheben), und</li>
+<li>Versionsverwaltung (zum Verwalten von Code-Änderungen)</li>
+</ul>
+<p>in einer Oberfläche. Der Übergang von Texteditor mit Zusatz-Fähigkeiten wie z.B. das Ausführen des Codes in einem Schritt zu einer IDE ist dabei relativ fließend. Manche Leute würden z.B. Visual Studio Code auch schon als IDE bezeichnen.</p>
+<p>Beliebte IDEs für die Entwicklung von Python-Code sind z.B.</p>
+<ul>
+<li><a href="https://www.spyder-ide.org">Spyder</a> oder</li>
+<li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a>.</li>
+</ul>
 </div>
+</div>
+<div id="wiederholungsfragen" class="section level2 hasAnchor">
+<h2><span class="header-section-number">1.2</span> Wiederholungsfragen<a href="#wiederholungsfragen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Installiere das Programm <a href="https://docs.microsoft.com/en-us/windows/powertoys/">“PowerToys”</a> mittels <code>winget</code></li>
+<li>Deinstalliere “PowerToys” mittels <code>winget uninstall</code></li>
+<li>Finde raus wie du mittels <code>winget</code> Software auf deinem Computer auf den neuesten Stand bringen kannst</li>
+<li>Nenne zumindest zwei Programmiersprachen</li>
+<li>Was unterscheidet einen Interpreter von einem Compiler?</li>
+<li>Schreibe ein Programm das den Text “Goodby Cruel World” ausgibt in
+<ol style="list-style-type: decimal">
+<li>PowerShell</li>
+<li>Python</li>
+</ol></li>
+</ol>
+
 </div>
 </div>
             </section>
