@@ -132,15 +132,15 @@ Die doppelten Anführungszeichen erfüllen dabei den gleichen Zweck wie die einf
 
 ### Interpreter
 
-Nachdem wir „Hello, World!“ schon in PowerShell geschrieben haben, wollen wir das gleiche Programm nun in Python implementieren. Der Code dafür kann z.B. so aussehen
+Nachdem wir „Hello, World!“ schon in PowerShell geschrieben haben, wollen wir das gleiche Programm nun in der **Programmiersprache Python** implementieren. Der Code dafür kann z.B. so aussehen
 
 ```py
 print("Hello, World!")
 ```
 
-Wir sehen, dass der übliche Befehl (Funktion) zum Ausgeben eines Texts (String) in Python `print` heißt. Das Argument des Befehls `"Hello, World!"` wird hier, wie auch in der PowerShell, unter doppelte (oder einfache) Anführungszeichen gesetzt. Damit wird in Python angezeigt, dass es sich um einen Text (String/Zeichenkette) und nicht um einen Befehl (wie z.B. bei der Funktion `print`) handelt.
+Wir sehen, dass der übliche Befehl (Funktion) zum Ausgeben eines Texts (**String**) in Python `print` heißt. Das Argument des Befehls `"Hello, World!"` wird hier, wie auch in der PowerShell, unter doppelte (oder einfache) Anführungszeichen gesetzt. Damit wird in Python angezeigt, dass es sich um einen Text (String/Zeichenkette) und nicht um einen Befehl (wie z.B. bei der Funktion `print`) handelt.
 
-Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine der Möglichkeiten ist die Ausführung direkt im Python-Interpreter.
+Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine der Möglichkeiten ist die Ausführung direkt im **Python-Interpreter**.
 
 1. Python-Interpreter öffnen
 
@@ -156,14 +156,14 @@ Wir haben num verschiedene Möglichkeiten unser Programm auszuprobieren. Eine de
    Hello, World!
    ```
 
-Bisher haben wir Code nur direkt im Interpreter ausgeführt ohne diesen vorher in einer Text-Datei zu speichern. Angesichts dessen, dass der bisherige Code nur eine Zeile lang war – dieser Code wird auch oft als “one liner” bezeichnet, war das auch nicht wirklich nötig.
+Bisher haben wir Code nur direkt im Interpreter ausgeführt ohne diesen vorher in einer Text-Datei zu speichern. Angesichts dessen, dass der bisherige Code nur eine Zeile lang war – dieser Code wird auch oft als “one liner” bezeichnet – war das auch nicht wirklich nötig.
 
 Nun wollen wir den Code unseres „Hello, World!“-Programms mittels Visual Studio Code speichern und ausführen.
 
 1. Visual Studio Code öffnen
 2. Eine neue Datei erstellen: <kbd>Ctrl</kbd> + <kbd>N</kbd>
-3. Den Code von „Hello, World!“ einfügen
-4. Die Datei mittels <kbd>Ctrl</kbd> + <kbd>N</kbd> unter dem Namen `hello.py` speichern
+3. Den Code `print("Hello, World!")` einfügen
+4. Die Datei mittels <kbd>Ctrl</kbd> + <kbd>S</kbd> unter dem Namen `hello.py` speichern
 5. Mittels „Run“ → „Run Without Debugging“ ausführen
 
 ### IDE
