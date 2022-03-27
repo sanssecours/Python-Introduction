@@ -46,9 +46,9 @@ In der Praxis verwendet man aber üblicherweise einen speziell für die Programm
 
 ### Command Line
 
-Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (**GUI: Graphical User Interface**) verwendet, ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (**CLI: Command Line Interface**) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte, wiederum mittels Programmierung, automatisieren kann. Das heißt auch bei den Text den man bei einer textbasierten Oberfläche eingibt handelt es sich um Code in einer bestimmten Programmiersprache.
+Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (**GUI: Graphical User Interface**) verwendet, ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (**CLI: Command Line Interface**) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte, wiederum mittels Programmierung, automatisieren kann. Das heißt auch bei den **Text** den man bei einer textbasierten Oberfläche eingibt handelt es sich um **Code in einer bestimmten Programmiersprache**.
 
-Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier an wie man unter Windows Software mittels CLI installiert. Dazu installieren wir als erstes [„Windows Terminal“](https://github.com/microsoft/terminal) in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die Programmiersprache [PowerShell][].
+Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier an wie man unter Windows Software mittels CLI installiert. Dazu installieren wir als erstes [„Windows Terminal“](https://github.com/microsoft/terminal) in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die **Programmiersprache [PowerShell][]**.
 
 [powershell]: https://en.wikipedia.org/wiki/PowerShell
 
