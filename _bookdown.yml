@@ -3,3 +3,4 @@ delete_merged_file: true
 output_dir: Bookdown
 rmd_files:
   - Introduction.md
+  - Types.md
