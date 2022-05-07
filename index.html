@@ -2,64 +2,50 @@
 <html lang="" xml:lang="">
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Python-Einführung</title>
-  <meta name="description" content="Python Programming Introduction" />
-  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Python-Einführung" />
+<meta property="og:type" content="book" />
 
-  <meta property="og:title" content="Python-Einführung" />
-  <meta property="og:type" content="book" />
-  
-  <meta property="og:description" content="Python Programming Introduction" />
-  <meta name="github-repo" content="sanssecours/Python-Introduction" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Python-Einführung" />
-  
-  <meta name="twitter:description" content="Python Programming Introduction" />
-  
+<meta property="og:description" content="Python Programming Introduction" />
+<meta name="github-repo" content="sanssecours/Python-Introduction" />
 
 <meta name="author" content="René Schwaiger" />
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
+<meta name="description" content="Python Programming Introduction">
 
+<title>Python-Einführung</title>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
 code.sourceCode > span { display: inline-block; line-height: 1.25; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -118,52 +104,74 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 
 
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if boostrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
 </head>
 
 <body>
 
+<div class="container-fluid main-container">
 
 
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li class="chapter" data-level="1" data-path=""><a href="#grundlagen"><i class="fa fa-check"></i><b>1</b> Grundlagen<span></span></a><ul>
-<li class="chapter" data-level="1.1" data-path=""><a href="#die-werkzeuge"><i class="fa fa-check"></i><b>1.1</b> Die Werkzeuge<span></span></a><ul>
-<li class="chapter" data-level="1.1.1" data-path=""><a href="#editor"><i class="fa fa-check"></i><b>1.1.1</b> Editor<span></span></a></li>
-<li class="chapter" data-level="1.1.2" data-path=""><a href="#command-line"><i class="fa fa-check"></i><b>1.1.2</b> Command Line<span></span></a></li>
-<li class="chapter" data-level="1.1.3" data-path=""><a href="#interpreter"><i class="fa fa-check"></i><b>1.1.3</b> Interpreter<span></span></a></li>
-<li class="chapter" data-level="1.1.4" data-path=""><a href="#ide"><i class="fa fa-check"></i><b>1.1.4</b> IDE<span></span></a></li>
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li class="has-sub"><a href="#grundlagen"><span class="toc-section-number">1</span> Grundlagen</a><ul>
+<li class="has-sub"><a href="#die-werkzeuge"><span class="toc-section-number">1.1</span> Die Werkzeuge</a><ul>
+<li><a href="#editor"><span class="toc-section-number">1.1.1</span> Editor</a></li>
+<li><a href="#command-line"><span class="toc-section-number">1.1.2</span> Command Line</a></li>
+<li><a href="#interpreter"><span class="toc-section-number">1.1.3</span> Interpreter</a></li>
+<li><a href="#ide"><span class="toc-section-number">1.1.4</span> IDE</a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path=""><a href="#wiederholungsfragen"><i class="fa fa-check"></i><b>1.2</b> Wiederholungsfragen<span></span></a></li>
+<li><a href="#wiederholungsfragen"><span class="toc-section-number">1.2</span> Wiederholungsfragen</a></li>
+</ul></li>
+<li class="has-sub"><a href="#datentypen-ausdrücke"><span class="toc-section-number">2</span> Datentypen &amp; Ausdrücke</a><ul>
+<li><a href="#repl"><span class="toc-section-number">2.1</span> REPL</a></li>
+<li class="has-sub"><a href="#ausdrücke"><span class="toc-section-number">2.2</span> Ausdrücke</a><ul>
+<li><a href="#konstanten"><span class="toc-section-number">2.2.1</span> Konstanten</a></li>
+</ul></li>
 </ul></li>
 </ul>
-
-      </nav>
-    </div>
-
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Python-Einführung</a>
-          </h1>
-        </div>
-
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
 <div id="header">
 <h1 class="title">Python-Einführung</h1>
-<p class="author"><em>René Schwaiger</em></p>
+<h4 class="author"><em>René Schwaiger</em></h4>
 </div>
-<div id="grundlagen" class="section level1 hasAnchor">
-<h1><span class="header-section-number">1</span> Grundlagen<a href="#grundlagen" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="grundlagen" class="section level1">
+<h1><span class="header-section-number">1</span> Grundlagen</h1>
 <p>Wie bei jedem Handwerk gibt es auch beim Programmieren gewisse Werkzeuge die man benötigt um eine Applikation zu erstellen. Das erste Werkzeug, dass ein angehender Programmierer verwendet ist wahrscheinlich ein <strong>Text-Editor</strong>. In diesem Programm schreibt man dann wie schon der Name andeutet Text, so-genannten <strong>Code</strong>, in einer bestimmten <strong>Programmiersprache</strong>. Je nach Programmiersprache beschreibt der Code entweder</p>
 <ol style="list-style-type: decimal">
 <li>welche Schritte ein Computer ausführen soll (imperativ), oder</li>
@@ -179,10 +187,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>Üblicherweise findet, zur Optimierung der Geschwindigkeit eines Programms, auch bei der Interpreter-Variant eine Übersetzung in maschinen-nahen Code statt. Als Programmierer muss man sich dabei aber – im Gegensatz zur Compiler-Variante – üblicherweise keine Gedanken machen.</p>
 <p><img src="Pictures/Programming-Process.svg" style="display: block; margin: auto;" /></p>
-<div id="die-werkzeuge" class="section level2 hasAnchor">
-<h2><span class="header-section-number">1.1</span> Die Werkzeuge<a href="#die-werkzeuge" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="editor" class="section level3 hasAnchor">
-<h3><span class="header-section-number">1.1.1</span> Editor<a href="#editor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="die-werkzeuge" class="section level2">
+<h2><span class="header-section-number">1.1</span> Die Werkzeuge</h2>
+<div id="editor" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> Editor</h3>
 <p>Wie schon in einführenden Teil beschrieben ist ein Text-Editor oder auch kurz Editor eines der wesentlichen Werkzeuge eines Programmierers. Von einer Textverarbeitung (wie z.B. “Word”, “LibreOffice” oder “Google Docs”) unterscheidet sich ein Texteditor, dadurch, dass man damit wirklich nur Text schreiben kann. Eine Formatierung oder das Einfügen von Bildern ist nicht möglich.</p>
 <p>Als essentielles Werkzeug ist ein Texteditor Teil der Standard-Installation vieler Betriebssystemen:</p>
 <ul>
@@ -194,8 +202,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="Pictures/Notepad.png" /></p>
 <p>In der Praxis verwendet man aber üblicherweise einen speziell für die Programmierung angepassten Texteditor (manchmal auch Code-Editor genannt).</p>
 </div>
-<div id="command-line" class="section level3 hasAnchor">
-<h3><span class="header-section-number">1.1.2</span> Command Line<a href="#command-line" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="command-line" class="section level3">
+<h3><span class="header-section-number">1.1.2</span> Command Line</h3>
 <p>Während man heutzutage als Anwender meist eine grafische Benutzeroberfläche (<strong>GUI: Graphical User Interface</strong>) verwendet, ist es als Programmierer üblich für viele Aufgaben in einer text-basierten Oberfläche (<strong>CLI: Command Line Interface</strong>) zu erledigen. Diese hat den Vorteil, dass man hier (wesentlich leichter als in einem GUI) Schritte, wiederum mittels Programmierung, automatisieren kann. Das heißt auch bei den <strong>Text</strong> den man bei einer textbasierten Oberfläche eingibt handelt es sich um <strong>Code in einer bestimmten Programmiersprache</strong>.</p>
 <p>Um eine kleine Einführung in eine text-basierte Oberfläche zu geben schauen wir uns hier an wie man unter Windows Software mittels CLI installiert. Dazu installieren wir als erstes <a href="https://github.com/microsoft/terminal">„Windows Terminal“</a> in der Powershell. Dabei handel es sich um einem Command-Line-Interpreter für die <strong>Programmiersprache <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a></strong>.</p>
 <ol style="list-style-type: decimal">
@@ -247,8 +255,8 @@ Microsoft Visual Studio Code Insiders Microsoft.VisualStudioCode.Insiders 1.66.0
 <div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="ex">Write-Output</span> <span class="st">&quot;Hello, World!&quot;</span></span></code></pre></div>
 <p>Die doppelten Anführungszeichen erfüllen dabei den gleichen Zweck wie die einfachen Anführungszeichen beim Befehl <code>winget search 'Visual Studio Code'</code>. Der Text <code>Hello, World!</code> wird als einzelnes Argument interpretiert und nicht als die zwei Argumente <code>Hello,</code> und <code>World!</code>.</p>
 </div>
-<div id="interpreter" class="section level3 hasAnchor">
-<h3><span class="header-section-number">1.1.3</span> Interpreter<a href="#interpreter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="interpreter" class="section level3">
+<h3><span class="header-section-number">1.1.3</span> Interpreter</h3>
 <p>Nachdem wir „Hello, World!“ schon in PowerShell geschrieben haben, wollen wir das gleiche Programm nun in der <strong>Programmiersprache Python</strong> implementieren. Der Code dafür kann z.B. so aussehen</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, World!&quot;</span>)</span></code></pre></div>
 <p>Wir sehen, dass der übliche Befehl (Funktion) zum Ausgeben eines Texts (<strong>String</strong>) in Python <code>print</code> heißt. Das Argument des Befehls <code>"Hello, World!"</code> wird hier, wie auch in der PowerShell, unter doppelte (oder einfache) Anführungszeichen gesetzt. Damit wird in Python angezeigt, dass es sich um einen Text (String/Zeichenkette) und nicht um einen Befehl (wie z.B. bei der Funktion <code>print</code>) handelt.</p>
@@ -274,8 +282,8 @@ Hello, World!</code></pre></li>
 <li>Mittels „Run“ → „Run Without Debugging“ ausführen</li>
 </ol>
 </div>
-<div id="ide" class="section level3 hasAnchor">
-<h3><span class="header-section-number">1.1.4</span> IDE<a href="#ide" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="ide" class="section level3">
+<h3><span class="header-section-number">1.1.4</span> IDE</h3>
 <p>Bei einem “Integrated Development Environment” handelt es sich um ein Programm, dass den Alltag eines Programmierers erleichtern soll. Dazu bündelt dieses üblicherweise Werkzeuge wie z.B.</p>
 <ul>
 <li>Code-Editor,</li>
@@ -291,8 +299,8 @@ Hello, World!</code></pre></li>
 </ul>
 </div>
 </div>
-<div id="wiederholungsfragen" class="section level2 hasAnchor">
-<h2><span class="header-section-number">1.2</span> Wiederholungsfragen<a href="#wiederholungsfragen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="wiederholungsfragen" class="section level2">
+<h2><span class="header-section-number">1.2</span> Wiederholungsfragen</h2>
 <ol style="list-style-type: decimal">
 <li>Installiere das Programm <a href="https://docs.microsoft.com/en-us/windows/powertoys/">“PowerToys”</a> mittels <code>winget</code></li>
 <li>Deinstalliere “PowerToys” mittels <code>winget uninstall</code></li>
@@ -308,56 +316,82 @@ Hello, World!</code></pre></li>
 
 </div>
 </div>
-            </section>
+<div id="datentypen-ausdrücke" class="section level1">
+<h1><span class="header-section-number">2</span> Datentypen &amp; Ausdrücke</h1>
+<div id="repl" class="section level2">
+<h2><span class="header-section-number">2.1</span> REPL</h2>
+<p>Bisher haben wir den meisten Code direkt im Powershell- oder Python-<strong>Interpreter</strong> (<code>python</code>) geschrieben. Dabei geben wir eine oder mehrere Zeilen von Code direkt ein und führen diese – üblicherweise nach der Eingabe mittels Return <kbd>⏎</kbd> – aus. Diese Art der Eingabe-Oberfläche wird oft auch als sogenannte <strong><a href="https://en.wikipedia.org/wiki/Read–eval–print_loop">REPL</a></strong> (Read-Eval-Print Loop) bezeichnet.</p>
+<p>Wie bei vielen anderen interpretierten Sprachen existieren auch bei Python alternative REPLs, die das Arbeiten mit Code nochmals vereinfachen können. Eine solche REPL mit dem Namen <a href="https://github.com/prompt-toolkit/ptpython"><code>ptpython</code></a> wollen wir nun installieren. Dazu verwenden wir <a href="https://pypi.org/project/pip/"><code>pip</code></a>, einen Package-Manager für Python. Ähnlich wie <a href="https://docs.microsoft.com/en-us/windows/package-manager/winget/"><code>winget</code></a> (und viele andere Package-Manager) kann man das Sub-Kommando <code>install</code> dazu verwenden Software zu installieren:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="ex">pip</span> install ptpython</span></code></pre></div>
+<p>Nach der Installation können wir <code>ptpython</code> mittels Eingabe des Befehls</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a><span class="ex">ptpython</span></span></code></pre></div>
+<p>verwenden und uns mit der Bedienung davon ein wenig vertraut machen. Wie wir im Verlauf noch sehen werden bietet <code>ptpython</code> in Vergleich zur Standard-REPL (<code>python</code>) Funktionen wie <strong>Autovervollständigung</strong> und <strong>Syntax-Highlighting</strong>.</p>
+</div>
+<div id="ausdrücke" class="section level2">
+<h2><span class="header-section-number">2.2</span> Ausdrücke</h2>
+<p>Bei einem Ausdruck (<code>Expression</code>) handelt es sich um ein (üblicherweise relativ kurzes) Stück Code, dass ausgewertet werden kann und dann ein bestimmtes Ergebnis eines bestimmten Datentyps liefert.</p>
+<div id="konstanten" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Konstanten</h3>
+<p>Einer der einfachsten Varianten von Ausdrücken sind Konstanten. Diese kennt man eventuell auch schon aus dem Mathematik-Unterricht. Hier mal ein paar Beispiele:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Konstante/Ausdruck</th>
+<th>Datentyp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>True</code></td>
+<td><code>bool</code> (Boolscher Wert)</td>
+</tr>
+<tr class="even">
+<td><code>1234</code></td>
+<td><code>int</code> (Ganzzahl)</td>
+</tr>
+<tr class="odd">
+<td><code>12.34</code></td>
+<td><code>float</code> (Gleitkommazahl)</td>
+</tr>
+<tr class="even">
+<td><code>"1234"</code></td>
+<td><code>str</code> (Zeichenkette)</td>
+</tr>
+<tr class="odd">
+<td><code>'1234'</code></td>
+<td><code>str</code> (Zeichenkette)</td>
+</tr>
+</tbody>
+</table>
+<p>Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion type verwenden:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="bu">type</span>(<span class="dv">1234</span>)</span></code></pre></div>
+<pre><code>&lt;class &#39;int&#39;&gt;</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="bu">type</span>(<span class="fl">12.34</span>)</span></code></pre></div>
+<pre><code>&lt;class &#39;float&#39;&gt;</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="bu">type</span>(<span class="st">&quot;1234&quot;</span>)</span></code></pre></div>
+<pre><code>&lt;class &#39;str&#39;&gt;</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a><span class="bu">type</span>(<span class="st">&#39;1234&#39;</span>)</span></code></pre></div>
+<pre><code>&lt;class &#39;str&#39;&gt;</code></pre>
 
-          </div>
-        </div>
-      </div>
+</div>
+</div>
+</div>
+<p style="text-align: center;">
+</p>
+</div>
+</div>
 
 
-    </div>
-  </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+</div>
+
 <script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": null,
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["Python-Einführung.pdf", "Python-Einführung.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
-});
+
 </script>
 
 </body>
-
 </html>
