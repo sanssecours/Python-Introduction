@@ -12,15 +12,15 @@ jobs:
     steps:
 
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
         with:
           submodules: true
 
       - name: Setup R
-        uses: r-lib/actions/setup-r@v1
+        uses: r-lib/actions/setup-r@master
 
       - name: Setup pandoc
-        uses: r-lib/actions/setup-pandoc@v1
+        uses: r-lib/actions/setup-pandoc@master
 
       - name: Install bookdown
         run: |
