@@ -5,6 +5,10 @@ github-repo: sanssecours/Python-Introduction
 description: Python Programming Introduction
 ---
 
+```{r, include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+```
+
 # Grundlagen
 
 Wie bei jedem Handwerk gibt es auch beim Programmieren gewisse Werkzeuge die man benötigt um eine Applikation zu erstellen. Das erste Werkzeug, dass ein angehender Programmierer verwendet ist wahrscheinlich ein **Text-Editor**. In diesem Programm schreibt man dann wie schon der Name andeutet Text, so-genannten **Code**, in einer bestimmten **Programmiersprache**. Je nach Programmiersprache beschreibt der Code entweder
