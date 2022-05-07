@@ -11,13 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/checkout@v2
+      - name: Clone repository
+        uses: actions/checkout@v2
         with:
           submodules: true
 
-      - uses: r-lib/actions/setup-r@v1
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v1
 
-      - uses: r-lib/actions/setup-pandoc@v1
+      - name: Setup pandoc
+        uses: r-lib/actions/setup-pandoc@v1
 
       - name: Install bookdown
         run: |
@@ -28,7 +31,8 @@ jobs:
       - name: Build book
         run: make
 
-      - uses: actions/upload-artifact@v2
+      - name: Upload book
+        uses: actions/upload-artifact@v2
         with:
           name: Bookdown
           path: Bookdown
@@ -45,7 +49,7 @@ jobs:
          name: Bookdown
          path: Bookdown
 
-     - name: Deploy
+     - name: Upload book to GitHub pages
        uses: peaceiris/actions-gh-pages@v3
        with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
