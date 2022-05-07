@@ -25,6 +25,7 @@ jobs:
       - name: Install bookdown
         run: |
           Rscript -e "install.packages(c('rmarkdown', 'bookdown'))"
+          Rscript -e "install.packages('reticulate')"
           Rscript -e "install.packages('tinytex')"
           Rscript -e "tinytex::install_tinytex()"
 
