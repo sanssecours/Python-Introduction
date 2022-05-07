@@ -17,3 +17,29 @@ ptpython
 ```
 
 verwenden und uns mit der Bedienung davon ein wenig vertraut machen. Wie wir im Verlauf noch sehen werden bietet `ptpython` in Vergleich zur Standard-REPL (`python`) Funktionen wie **Autovervollständigung** und **Syntax-Highlighting**.
+
+## Ausdrücke
+
+Bei einem Ausdruck (`Expression`) handelt es sich um ein (üblicherweise relativ kurzes) Stück Code, dass ausgewertet werden kann und dann ein bestimmtes Ergebnis eines bestimmten Datentyps liefert.
+
+### Konstanten
+
+Einer der einfachsten Varianten von Ausdrücken sind Konstanten. Diese kennt man eventuell auch schon aus dem Mathematik-Unterricht. Hier mal ein paar Beispiele:
+
+| Konstante/Ausdruck | Datentyp                 |
+| ------------------ | ------------------------ |
+| `True`             | `bool` (Boolscher Wert)  |
+| `1234`             | `int` (Ganzzahl)         |
+| `12.34`            | `float` (Gleitkommazahl) |
+| `"1234"`           | `str` (Zeichenkette)     |
+| `'1234'`           | `str` (Zeichenkette)     |
+
+Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion type verwenden:
+
+```{python}
+type(True)
+type(1234)
+type(12.34)
+type("1234")
+type('1234')
+```
