@@ -1,8 +1,5 @@
-bookdown::gitbook:
-  split_by: none
-  config:
-      download: ["pdf", "epub"]
-      sharing: null
 bookdown::epub_book: default
+bookdown::html_book:
+  split_by: none
 bookdown::pdf_book:
   latex_engine: xelatex
