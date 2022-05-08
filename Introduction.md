@@ -5,6 +5,12 @@ github-repo: sanssecours/Python-Introduction
 description: Python Programming Introduction
 ---
 
+<style type="text/css">
+  body{
+  font-size: 13pt;
+}
+</style>
+
 ```{r, include=FALSE}
 knitr::opts_chunk$set(comment = NA)
 ```
