@@ -142,3 +142,26 @@ print("One")
 print()
 print("Two")
 ```
+
+> ❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?
+>
+> ❔ Welchen Type haben die Argumente und der Rückgabewert der Ausdrücke?
+>
+> Versuche die Aufgabe als erstes **im Kopf** zu lösen und gib diese danach im Python-Interpreter ein um dein Ergebnis zu überprüfen.
+>
+> Welche Aufgaben dabei die noch nicht besprochenen Funktionen (wie z.B. `float`) übernehmen kannst du dabei feststellen indem du diese inklusive erster Klammer – also z.B. `float(` – in `ptpython` eingibst. Eine andere Möglichkeit ist in der [Python-Dokumentation](https://docs.python.org) nach der jeweiligen Funktion zu suchen.
+
+```python
+1
+1.0
+float(1)
+int("1")
+1+10 * 3.3
+1.1
+print(1+3)
+str(1) + "10"
+True
+int(True)
+int(False)
+bool(1337)
+```
