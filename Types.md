@@ -94,3 +94,51 @@ Dabei sollte man darauf achten **keine trivialen Kommentare** zu schreiben. Ein 
 ```
 
 ist höchstens für absolute Programmierneulinge interessant. Das soll natürlich keine Aufforderung keine Kommentare zu schreiben. **Kommentare** und andere Form der **Dokumentation** sind ein **essentieller Teil guter Software**.
+
+#### Argumente (Input) und Rückgabewerte (Output)
+
+Jede Funktion in Python übernimmt eine **bestimmte Anzahl von Argumenten** und returniert **einen Rückgabewert**. Dabei ist zu beachten, dass die Anzahl von Argumenten auch 0 sein kann. Eine Funktion kann auch `None` retunieren. Dieser Wert vom Typ `NoneType` steht im Endeffekt für „keinen Wert“. Schauen wir uns die Eingabewerte von Funktionen und Operatoren an Hand von ein paar Beispielen an.
+
+```{python}
+1 + 2
+```
+
+Die Operation `+` übernimmt hier **zwei Argumente** vom Typ `int` und gibt die Summe dieser Werte `3` (Typ `int`) zurück. Die Operation `+` ist auch auf andere Datentypen wie z.B. `float` und `str` definiert. Bei nachfolgendem Ausdruck:
+
+```{python}
+1 + 4.5
+```
+
+handelt es sich beim ersten Argumenten wiederum um eine **Ganzzahl** (`int`) und beim zweiten Argument um eine **Gleitkommazahl** (`float`). Beim Rückgabewert von `5.5` handelt es sich wiederum um eine **Gleitkommazahl**. Die Operation `+` ist auch auf Strings definiert, wobei hierbei die String aneinanderefügt werden:
+
+```{python}
+"Hello, " + "World"
+```
+
+Beim Rückgabewert handelt es sich wiederum um einen String:
+
+```{python}
+type("Hello, " + "World")
+```
+
+Manche Funktionen können auch eine beliebige Anzahl von Argumenten übernehmen. Eine dieser Funktionen ist `min`:
+
+```{python}
+min(1, -10)
+min(1, -1, 0.5, -2)
+```
+
+Zum Schluss wollen wir uns noch die Funktion `print` ansehen, die wir schon verwendet haben um die Zeichenkette “Hello, World!” auf dem Bildschirm auszugeben. Diese kann wiederum eine beliebige Anzahl von Argumenten übernehmen und gibt diese auf dem “Standard Output” (`stdout`), also üblicherweise dem Bildschirm, aus. Die Funktion gibt dabei aber keinen Wert zurück (`None`).
+
+```{python}
+print("Hello, ", "World")
+type(print("Hello, ", "World"))
+```
+
+Die Funktion `print` kann auch ohne Argumente aufgerufen werden. Das sorgt dafür, dass ein leere Zeile (ein Zeilenvorschub) auf `stdout` ausgegeben wird.
+
+```{python, results='hold'}
+print("One")
+print()
+print("Two")
+```
