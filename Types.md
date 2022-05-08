@@ -43,3 +43,54 @@ type(12.34)
 type("1234")
 type('1234')
 ```
+
+### Funktionen und Operatoren
+
+Diverse Funtkionen wie z.B. `abs`, `min` und Operatoren wie z.B. `+`, `-` , `**` (Potzenz) können ebenfalls Teil eines Ausdrucks sein.
+
+```{python}
+1+2
+"1" + "2"
+2**3
+abs(-123)
+min(12.4, 12.3)
+max(12.4, 12.3)
+min(max(1,2,3), max(-1,-2,-3))
+```
+
+Wie man bei der Funktion `min` sieht werden die Argumente einer Funktion in Python durch Beistriche getrennt.
+
+> ❔ Warum unterscheidet sich das Ergebnis des ersten und des zweiten Ausdrucks?
+>
+> ❔ Welche Typen haben die obigen Ausdrücke?
+
+Operationen wie `+` oder `**` können ebenfalls als Funktion angesehen werden, die
+
+- einen speziellen Namen (wie z.B. `+`, `-` , `*`) besitzen und
+- meist **In**fix-Notation (Funktion/Operator zwischen Argumenten) statt **Post**fix-Notation (Argumente nach Operation/Funktion) verwenden.
+
+So gibt es neben dem Operator `+` z.B. auch eine Funktion mit mehr oder weniger gleicher Funktionalität mit dem Namen `add`:
+
+```{python, collapse=TRUE, comment='#'}
+from operator import add # Funktion add importieren
+
+add(1, 2) # Argumente nach Funktion (Postfix-Notation)
+1 + 2 # Argumente vor und nach Funktion/Operator (Infix-Notation)
+```
+
+Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. `abs` und `-` gibt es noch viele andere Funktionen/Operatoren – und andere Zusatzfunktionalität – die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion `add` aus dem Modul `operator` importiert wird.
+
+Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen `#`. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu **dokumentieren**
+
+- **warum** ein bestimmte Löung für ein Problem gewählt wurde
+
+- welche **Probleme** auftreten könnten oder auch
+- **wie** ein bestimmtes Problem gelöst wurde.
+
+Dabei sollte man darauf achten **keine trivialen Kommentare** zu schreiben. Ein Kommentar wie z.B.
+
+```python
+1 + 2 # Die Ganzzahlen 1 und 2 werden addiert
+```
+
+ist höchstens für absolute Programmierneulinge interessant. Das soll natürlich keine Aufforderung keine Kommentare zu schreiben. **Kommentare** und andere Form der **Dokumentation** sind ein **essentieller Teil guter Software**.
