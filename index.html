@@ -21,7 +21,7 @@
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
 <script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -158,6 +158,7 @@ details > summary {
 <li><a href="#repl"><span class="toc-section-number">2.1</span> REPL</a></li>
 <li class="has-sub"><a href="#ausdrücke"><span class="toc-section-number">2.2</span> Ausdrücke</a><ul>
 <li><a href="#konstanten"><span class="toc-section-number">2.2.1</span> Konstanten</a></li>
+<li><a href="#mathematische-funktionen-und-operatoren"><span class="toc-section-number">2.2.2</span> Mathematische Funktionen und Operatoren</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -170,6 +171,11 @@ details > summary {
 <h1 class="title">Python-Einführung</h1>
 <h4 class="author"><em>René Schwaiger</em></h4>
 </div>
+<style type="text/css">
+  body{
+  font-size: 13pt;
+}
+</style>
 <div id="grundlagen" class="section level1">
 <h1><span class="header-section-number">1</span> Grundlagen</h1>
 <p>Wie bei jedem Handwerk gibt es auch beim Programmieren gewisse Werkzeuge die man benötigt um eine Applikation zu erstellen. Das erste Werkzeug, dass ein angehender Programmierer verwendet ist wahrscheinlich ein <strong>Text-Editor</strong>. In diesem Programm schreibt man dann wie schon der Name andeutet Text, so-genannten <strong>Code</strong>, in einer bestimmten <strong>Programmiersprache</strong>. Je nach Programmiersprache beschreibt der Code entweder</p>
@@ -364,14 +370,61 @@ Hello, World!</code></pre></li>
 </tbody>
 </table>
 <p>Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion type verwenden:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="bu">type</span>(<span class="dv">1234</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="bu">type</span>(<span class="va">True</span>)</span></code></pre></div>
+<pre><code>&lt;class &#39;bool&#39;&gt;</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="bu">type</span>(<span class="dv">1234</span>)</span></code></pre></div>
 <pre><code>&lt;class &#39;int&#39;&gt;</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="bu">type</span>(<span class="fl">12.34</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="bu">type</span>(<span class="fl">12.34</span>)</span></code></pre></div>
 <pre><code>&lt;class &#39;float&#39;&gt;</code></pre>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="bu">type</span>(<span class="st">&quot;1234&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a><span class="bu">type</span>(<span class="st">&quot;1234&quot;</span>)</span></code></pre></div>
 <pre><code>&lt;class &#39;str&#39;&gt;</code></pre>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a><span class="bu">type</span>(<span class="st">&#39;1234&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"></a><span class="bu">type</span>(<span class="st">&#39;1234&#39;</span>)</span></code></pre></div>
 <pre><code>&lt;class &#39;str&#39;&gt;</code></pre>
+</div>
+<div id="mathematische-funktionen-und-operatoren" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Mathematische Funktionen und Operatoren</h3>
+<p>Diverse Funtkionen wie z.B. <code>abs</code>, <code>min</code> und Operatoren wie z.B. <code>+</code>, <code>-</code> , <code>**</code> (Potzenz) können ebenfalls Teil eines Ausdrucks sein.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"></a><span class="dv">1</span><span class="op">+</span><span class="dv">2</span></span></code></pre></div>
+<pre><code>3</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1"></a><span class="co">&quot;1&quot;</span> <span class="op">+</span> <span class="st">&quot;2&quot;</span></span></code></pre></div>
+<pre><code>&#39;12&#39;</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1"></a><span class="dv">2</span><span class="op">**</span><span class="dv">3</span></span></code></pre></div>
+<pre><code>8</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1"></a><span class="bu">abs</span>(<span class="op">-</span><span class="dv">123</span>)</span></code></pre></div>
+<pre><code>123</code></pre>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1"></a><span class="bu">min</span>(<span class="fl">12.4</span>, <span class="fl">12.3</span>)</span></code></pre></div>
+<pre><code>12.3</code></pre>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1"></a><span class="bu">max</span>(<span class="fl">12.4</span>, <span class="fl">12.3</span>)</span></code></pre></div>
+<pre><code>12.4</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1"></a><span class="bu">min</span>(<span class="bu">max</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="bu">max</span>(<span class="op">-</span><span class="dv">1</span>,<span class="op">-</span><span class="dv">2</span>,<span class="op">-</span><span class="dv">3</span>))</span></code></pre></div>
+<pre><code>-1</code></pre>
+<p>Wie man bei der Funktion <code>min</code> sieht werden die Argumente einer Funktion in Python durch Beistriche getrennt.</p>
+<blockquote>
+<p>❔ Warum unterscheidet sich das Ergebnis des ersten und des zweiten Ausdrucks?</p>
+<p>❔ Welche Typen haben die obigen Ausdrücke?</p>
+</blockquote>
+<p>Operationen wie <code>+</code> oder <code>**</code> können ebenfalls als Funktion angesehen werden, die</p>
+<ul>
+<li>einen speziellen Namen (wie z.B. <code>+</code>, <code>-</code> , <code>*</code>) besitzen und</li>
+<li>meist <strong>In</strong>fix-Notation (Funktion/Operator zwischen Argumenten) statt <strong>Post</strong>fix-Notation (Argumente nach Operation/Funktion) verwenden.</li>
+</ul>
+<p>So gibt es neben dem Operator <code>+</code> z.B. auch eine Funktion mit mehr oder weniger gleicher Funktionalität mit dem Namen <code>add</code>:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1"></a><span class="im">from</span> operator <span class="im">import</span> add <span class="co"># Funktion add importieren</span></span>
+<span id="cb36-2"><a href="#cb36-2"></a></span>
+<span id="cb36-3"><a href="#cb36-3"></a>add(<span class="dv">1</span>, <span class="dv">2</span>) <span class="co"># Argumente nach Funktion (Postfix-Notation)</span></span>
+<span id="cb36-4"><a href="#cb36-4"></a><span class="co"># 3</span></span>
+<span id="cb36-5"><a href="#cb36-5"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="co"># Argumente vor und nach Funktion/Operator (Infix-Notation)</span></span>
+<span id="cb36-6"><a href="#cb36-6"></a><span class="co"># 3</span></span></code></pre></div>
+<p>Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. <code>abs</code> und <code>-</code> gibt es noch viele andere Funktionen/Operatoren – und andere Zusatzfunktionalität – die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion <code>add</code> aus dem Modul <code>operator</code> importiert wird.</p>
+<p>Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen <code>#</code>. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu <strong>dokumentieren</strong></p>
+<ul>
+<li><p><strong>warum</strong> ein bestimmte Löung für ein Problem gewählt wurde</p></li>
+<li><p>welche <strong>Probleme</strong> auftreten könnten oder auch</p></li>
+<li><p><strong>wie</strong> ein bestimmtes Problem gelöst wurde.</p></li>
+</ul>
+<p>Dabei sollte man darauf achten <strong>keine trivialen Kommentare</strong> zu schreiben. Ein Kommentar wie z.B.</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="co"># Die Ganzzahlen 1 und 2 werden addiert</span></span></code></pre></div>
+<p>ist höchstens für absolute Programmierneulinge interessant. Das soll natürlich keine Aufforderung keine Kommentare zu schreiben. <strong>Kommentare</strong> und andere Form der <strong>Dokumentation</strong> sind ein <strong>essentieller Teil guter Software</strong>.</p>
 
 </div>
 </div>
