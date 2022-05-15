@@ -78,7 +78,7 @@ add(1, 2) # Argumente nach Funktion (Postfix-Notation)
 1 + 2 # Argumente vor und nach Funktion/Operator (Infix-Notation)
 ```
 
-Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. `abs` und `-` gibt es noch viele andere Funktionen/Operatoren – und andere Zusatzfunktionalität – die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion `add` aus dem Modul `operator` importiert wird.
+Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. `abs` und `-` gibt es noch viele andere Funktionen/Operatoren, die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion `add` aus dem Modul `operator` importiert wird.
 
 Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen `#`. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu **dokumentieren**
 
