@@ -159,6 +159,7 @@ details > summary {
 <li class="has-sub"><a href="#ausdrücke"><span class="toc-section-number">2.2</span> Ausdrücke</a><ul>
 <li><a href="#konstanten"><span class="toc-section-number">2.2.1</span> Konstanten</a></li>
 <li><a href="#funktionen-und-operatoren"><span class="toc-section-number">2.2.2</span> Funktionen und Operatoren</a></li>
+<li><a href="#vergleichsoperatoren"><span class="toc-section-number">2.2.3</span> Vergleichsoperatoren</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -415,7 +416,7 @@ Hello, World!</code></pre></li>
 <span id="cb36-4"><a href="#cb36-4"></a><span class="co"># 3</span></span>
 <span id="cb36-5"><a href="#cb36-5"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="co"># Argumente vor und nach Funktion/Operator (Infix-Notation)</span></span>
 <span id="cb36-6"><a href="#cb36-6"></a><span class="co"># 3</span></span></code></pre></div>
-<p>Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. <code>abs</code> und <code>-</code> gibt es noch viele andere Funktionen/Operatoren – und andere Zusatzfunktionalität – die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion <code>add</code> aus dem Modul <code>operator</code> importiert wird.</p>
+<p>Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. <code>abs</code> und <code>-</code> gibt es noch viele andere Funktionen/Operatoren, die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion <code>add</code> aus dem Modul <code>operator</code> importiert wird.</p>
 <p>Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen <code>#</code>. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu <strong>dokumentieren</strong></p>
 <ul>
 <li><p><strong>warum</strong> ein bestimmte Löung für ein Problem gewählt wurde</p></li>
@@ -433,7 +434,7 @@ Hello, World!</code></pre></li>
 <p>Die Operation <code>+</code> übernimmt hier <strong>zwei Argumente</strong> vom Typ <code>int</code> und gibt die Summe dieser Werte <code>3</code> (Typ <code>int</code>) zurück. Die Operation <code>+</code> ist auch auf andere Datentypen wie z.B. <code>float</code> und <code>str</code> definiert. Bei nachfolgendem Ausdruck:</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1"></a><span class="dv">1</span> <span class="op">+</span> <span class="fl">4.5</span></span></code></pre></div>
 <pre><code>5.5</code></pre>
-<p>handelt es sich beim ersten Argumenten wiederum um eine <strong>Ganzzahl</strong> (<code>int</code>) und beim zweiten Argument um eine <strong>Gleitkommazahl</strong> (<code>float</code>). Beim Rückgabewert von <code>5.5</code> handelt es sich wiederum um eine <strong>Gleitkommazahl</strong>. Die Operation <code>+</code> ist auch auf Strings definiert, wobei hierbei die String aneinanderefügt werden:</p>
+<p>handelt es sich beim ersten Argumenten wiederum um eine <strong>Ganzzahl</strong> (<code>int</code>) und beim zweiten Argument um eine <strong>Gleitkommazahl</strong> (<code>float</code>). Beim Rückgabewert von <code>5.5</code> handelt es sich wiederum um eine <strong>Gleitkommazahl</strong>. Die Operation <code>+</code> ist auch auf Strings definiert, wobei hierbei die String aneinandergefügt werden:</p>
 <div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1"></a><span class="co">&quot;Hello, &quot;</span> <span class="op">+</span> <span class="st">&quot;World&quot;</span></span></code></pre></div>
 <pre><code>&#39;Hello, World&#39;</code></pre>
 <p>Beim Rückgabewert handelt es sich wiederum um einen String:</p>
@@ -475,8 +476,42 @@ Two</code></pre>
 <span id="cb56-10"><a href="#cb56-10"></a><span class="bu">int</span>(<span class="va">True</span>)</span>
 <span id="cb56-11"><a href="#cb56-11"></a><span class="bu">int</span>(<span class="va">False</span>)</span>
 <span id="cb56-12"><a href="#cb56-12"></a><span class="bu">bool</span>(<span class="dv">1337</span>)</span></code></pre></div>
-
 </div>
+</div>
+<div id="vergleichsoperatoren" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> Vergleichsoperatoren</h3>
+<p>Eine, wie wir später noch sehen werden, in Programmiersprachen sehr wichtige Art Aufgabe übernehmen Vergleichsoperatoren. Diese Arten von Operatoren</p>
+<ul>
+<li><p>vergleichen <strong>zwei Argumente</strong> und</p></li>
+<li><p>geben ein <strong>Ergebnis vom Typ <code>bool</code></strong>, also entweder <code>True</code> oder <code>False</code> zurück.</p></li>
+</ul>
+<p>Der häufigste Vergleichsoperator ist wohl <code>==</code> der seine zwei Argumente auf <strong>Gleichheit</strong> überprüft:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1"></a><span class="dv">1</span> <span class="op">==</span> <span class="dv">2</span></span></code></pre></div>
+<pre><code>False</code></pre>
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1"></a><span class="co">&quot;Hello&quot;</span> <span class="op">==</span> <span class="st">&#39;Hello&#39;</span></span></code></pre></div>
+<pre><code>True</code></pre>
+<div class="sourceCode" id="cb61"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1"></a><span class="co">&quot;hello&quot;</span> <span class="op">==</span> <span class="st">&quot;Hello&quot;</span></span></code></pre></div>
+<pre><code>False</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1"></a><span class="va">None</span> <span class="op">==</span> <span class="va">None</span></span></code></pre></div>
+<pre><code>True</code></pre>
+<p>Der genau entgegengesetzte Operator zu <code>==</code> ist <code>!=</code> und überprüft ob die Ausdrücken links und rechts <strong>nicht gleich</strong> (unterschiedlich) sind.</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1"></a><span class="dv">1</span> <span class="op">!=</span> <span class="dv">1</span></span></code></pre></div>
+<pre><code>False</code></pre>
+<div class="sourceCode" id="cb67"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1"></a><span class="dv">1337</span> <span class="op">!=</span> <span class="dv">4</span></span></code></pre></div>
+<pre><code>True</code></pre>
+<div class="sourceCode" id="cb69"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1"></a><span class="co">&quot;Hello&quot;</span> <span class="op">!=</span> <span class="st">&#39;hello&#39;</span></span></code></pre></div>
+<pre><code>True</code></pre>
+<div class="sourceCode" id="cb71"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1"></a><span class="va">None</span> <span class="op">!=</span> <span class="va">None</span></span></code></pre></div>
+<pre><code>False</code></pre>
+<blockquote>
+<p>❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?</p>
+</blockquote>
+<div class="sourceCode" id="cb73"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1"></a><span class="co">&quot;1&quot;</span> <span class="op">==</span> <span class="st">&#39;1&#39;</span></span>
+<span id="cb73-2"><a href="#cb73-2"></a><span class="dv">1</span> <span class="op">!=</span> <span class="dv">1</span></span>
+<span id="cb73-3"><a href="#cb73-3"></a><span class="va">True</span> <span class="op">==</span> <span class="va">False</span></span>
+<span id="cb73-4"><a href="#cb73-4"></a><span class="va">True</span> <span class="op">!=</span> <span class="va">False</span></span>
+<span id="cb73-5"><a href="#cb73-5"></a><span class="dv">2</span> <span class="op">!=</span> <span class="fl">2.2</span></span></code></pre></div>
+
 </div>
 </div>
 </div>
