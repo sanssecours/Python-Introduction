@@ -109,7 +109,7 @@ Die Operation `+` übernimmt hier **zwei Argumente** vom Typ `int` und gibt die 
 1 + 4.5
 ```
 
-handelt es sich beim ersten Argumenten wiederum um eine **Ganzzahl** (`int`) und beim zweiten Argument um eine **Gleitkommazahl** (`float`). Beim Rückgabewert von `5.5` handelt es sich wiederum um eine **Gleitkommazahl**. Die Operation `+` ist auch auf Strings definiert, wobei hierbei die String aneinanderefügt werden:
+handelt es sich beim ersten Argumenten wiederum um eine **Ganzzahl** (`int`) und beim zweiten Argument um eine **Gleitkommazahl** (`float`). Beim Rückgabewert von `5.5` handelt es sich wiederum um eine **Gleitkommazahl**. Die Operation `+` ist auch auf Strings definiert, wobei hierbei die String aneinandergefügt werden:
 
 ```{python}
 "Hello, " + "World"
