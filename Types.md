@@ -165,3 +165,39 @@ int(True)
 int(False)
 bool(1337)
 ```
+
+### Vergleichsoperatoren
+
+Eine, wie wir später noch sehen werden, in Programmiersprachen sehr wichtige Art Aufgabe übernehmen Vergleichsoperatoren. Diese Arten von Operatoren
+
+- vergleichen **zwei Argumente** und
+
+- geben ein **Ergebnis vom Typ `bool`**, also entweder `True` oder `False ` zurück.
+
+Der häufigste Vergleichsoperator ist wohl `==` der seine zwei Argumente auf **Gleichheit** überprüft:
+
+```{python}
+1 == 2
+"Hello" == 'Hello'
+"hello" == "Hello"
+None == None
+```
+
+Der genau entgegengesetzte Operator zu `==` ist `!=` und überprüft ob die Ausdrücken links und rechts **nicht gleich** (unterschiedlich) sind.
+
+```{python}
+1 != 1
+1337 != 4
+"Hello" != 'hello'
+None != None
+```
+
+> ❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?
+
+```python
+"1" == '1'
+1 != 1
+True == False
+True != False
+2 != 2.2
+```
