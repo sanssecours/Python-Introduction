@@ -138,6 +138,8 @@ print("Hello,", "World")
 type(print("Hello,", "World"))
 ```
 
+> - ❔ Warum gibt der Interpreter beim Aufruf des zweiten Ausdrucks sowohl den Typ des Ausdrucks (`<class 'NoneType'>`) als auch den Text “Hello,  World” aus?
+
 Die Funktion `print` kann auch ohne Argumente aufgerufen werden. Das sorgt dafür, dass ein leere Zeile (ein Zeilenvorschub) auf `stdout` ausgegeben wird.
 
 ```{python, results='hold'}
