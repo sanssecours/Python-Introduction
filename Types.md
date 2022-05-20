@@ -60,9 +60,12 @@ min(max(1,2,3), max(-1,-2,-3))
 
 Wie man bei der Funktion `min` sieht werden die Argumente einer Funktion in Python durch Beistriche getrennt.
 
-> ❔ Warum unterscheidet sich das Ergebnis des ersten und des zweiten Ausdrucks?
+> - ❔ Warum unterscheidet sich das Ergebnis des ersten und des zweiten Ausdrucks?
 >
-> ❔ Welche Typen haben die obigen Ausdrücke?
+> - ❔ Um welche mathematische Operation handelt es sich bei `**`?
+> - ❔ Welchen Wert ermitteln die Funktionen `min`, `max` und `abs`? 
+>
+> - ❔ Welche Typen haben die obigen Ausdrücke?
 
 Operationen wie `+` oder `**` können ebenfalls als Funktion angesehen werden, die
 
