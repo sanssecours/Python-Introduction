@@ -206,3 +206,29 @@ True == False
 True != False
 2 != 2.2
 ```
+
+Neben Gleichheit kann man bestimmte Ausdrücke, wie z.b. Zahlen, auch mit
+
+- `<` (kleiner) ,
+- `<=` (kleiner gleich) ,
+- `>` (größer), oder
+- `>=` (größer gleich)
+
+vergleichen.
+
+```{python}
+5 < 6
+6 < 6
+6 <= 6
+2 >= 2
+2.1 > 2.01
+```
+
+> - ❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?
+
+```python
+20 > 21
+20 >= 21
+1 >= 1
+1 < 1
+```
