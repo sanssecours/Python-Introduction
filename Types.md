@@ -63,7 +63,7 @@ Wie man bei der Funktion `min` sieht werden die Argumente einer Funktion in Pyth
 > - ❔ Warum unterscheidet sich das Ergebnis des ersten und des zweiten Ausdrucks?
 >
 > - ❔ Um welche mathematische Operation handelt es sich bei `**`?
-> - ❔ Welchen Wert ermitteln die Funktionen `min`, `max` und `abs`? 
+> - ❔ Welchen Wert ermitteln die Funktionen `min`, `max` und `abs`?
 >
 > - ❔ Welche Typen haben die obigen Ausdrücke?
 
@@ -138,7 +138,7 @@ print("Hello,", "World")
 type(print("Hello,", "World"))
 ```
 
-> - ❔ Warum gibt der Interpreter beim Aufruf des zweiten Ausdrucks sowohl den Typ des Ausdrucks (`<class 'NoneType'>`) als auch den Text “Hello,  World” aus?
+> - ❔ Warum gibt der Interpreter beim Aufruf des zweiten Ausdrucks sowohl den Typ des Ausdrucks (`<class 'NoneType'>`) als auch den Text “Hello, World” aus?
 
 Die Funktion `print` kann auch ohne Argumente aufgerufen werden. Das sorgt dafür, dass ein leere Zeile (ein Zeilenvorschub) auf `stdout` ausgegeben wird.
 
