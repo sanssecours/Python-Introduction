@@ -134,8 +134,8 @@ min(1, -1, 0.5, -2)
 Zum Schluss wollen wir uns noch die Funktion `print` ansehen, die wir schon verwendet haben um die Zeichenkette “Hello, World!” auf dem Bildschirm auszugeben. Diese kann wiederum eine beliebige Anzahl von Argumenten übernehmen und gibt diese auf dem “Standard Output” (`stdout`), also üblicherweise dem Bildschirm, aus. Die Funktion gibt dabei aber keinen Wert zurück (`None`).
 
 ```{python}
-print("Hello, ", "World")
-type(print("Hello, ", "World"))
+print("Hello,", "World")
+type(print("Hello,", "World"))
 ```
 
 Die Funktion `print` kann auch ohne Argumente aufgerufen werden. Das sorgt dafür, dass ein leere Zeile (ein Zeilenvorschub) auf `stdout` ausgegeben wird.
