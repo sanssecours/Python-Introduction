@@ -131,7 +131,7 @@ min(1, -10)
 min(1, -1, 0.5, -2)
 ```
 
-Zum Schluss wollen wir uns noch die Funktion `print` ansehen, die wir schon verwendet haben um die Zeichenkette “Hello, World!” auf dem Bildschirm auszugeben. Diese kann wiederum eine beliebige Anzahl von Argumenten übernehmen und gibt diese auf dem “Standard Output” (`stdout`), also üblicherweise dem Bildschirm, aus. Die Funktion gibt dabei aber keinen Wert zurück (`None`).
+Zum Schluss wollen wir uns noch die Funktion `print` ansehen, die wir schon verwendet haben um die Zeichenkette “Hello, World!” auf dem Bildschirm auszugeben. Diese kann wiederum eine beliebige Anzahl von Argumenten übernehmen und gibt diese auf dem “Standard Output” (`stdout`), also üblicherweise dem Bildschirm, getrennt durch Leerzeichen aus. Die Funktion gibt dabei aber keinen Wert zurück (`None`).
 
 ```{python}
 print("Hello,", "World")
