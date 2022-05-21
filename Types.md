@@ -232,3 +232,76 @@ vergleichen.
 1 >= 1
 1 < 1
 ```
+
+### Boolsche Operatoren
+
+Boolsche Ausdrücke, also Ausdrücke die entweder den Wert `True` oder `False` annehmen sind ein wichtiger Bestandteil praktisch jedes Programms. Um Boolsche Ausdrücke miteinander zu kombinieren kann man boolsche Operatoren verwenden.    Hier wollen wir kurz auf die wichtigsten dieser Operatoren:
+
+- `not`,
+- `and`, und
+- `or`
+
+eingehen. 
+
+#### `not`
+
+Der Operator `not` (nicht) wandelt **einen boolschen Ausdruck** in das **Gegenteil** um. Das heißt 
+
+- aus `not True` wird `False` und 
+- aus `not False` wird `True`.
+
+Hierzu ein paar Beispiele:
+
+```{python}
+not False
+not (1 >= 2)
+not not not True
+```
+
+Die Klammern `()` im zweiten Ausdruck dienen dazu sicherzustellen, dass `1 >= 2` als erstes ausgewertet wird. Da `not` **stärker** wie Vergleichsoperatoren, wie `>=`, **bindet** und **Ausdrücke von links nach rechts** ausgewertet werden würde beim Ausdruck
+
+```python
+not 1 >= 2
+```
+
+als erstes `not 1` ausgewertet. Da jede Zahl außer `0` als wahr (`True`) interpretiert wird kann dieser Ausdruck auch als `not True` geschrieben werden. Das Ergebnis des Teilausdrucks ist also `False`:
+
+```{python}
+not 1
+```
+
+Dadurch ergibt sich der Ausdruck:
+
+```python
+False >= 2
+```
+
+Hierbei wird **implizit**  `False` in `0` (und `True` in `1`) umgewandelt. Daduch ergibt sich der Ausdruck:
+
+```python
+0 >= 2
+```
+
+der den Wert `False` zurückliefert. Wir können unser Ergebnis nochmals überprüfen indem wir den Ausdruck ohne Klammern in den Interpreter eingeben:
+
+```{python}
+not 1 >= 2
+```
+
+Zu der impliziten Umwandlung von Zahlen in boolsche Ausdrücke ist noch zu sagen, dass man sich auf diese nicht verlassen sollte. Wie wir oben gesehen haben ist diese Auswertung nicht unbedingt intuitiv. Es macht Sinn
+
+- **Ausdrücke entweder** so zu **klammern**, dass keine Zahlen mit boolschen Ausdrücken verglichen werden, oder
+- Ausdrücke vorher **explizit** mittels den Funktionen`bool` in einen boolschen Ausruck oder mittels `int` in eine Zahl **umzuwandeln**.  
+
+#### `and`
+
+Mittels des Operators `and` kann man zwei boolsche Ausdrücke miteinander verbinden. Dabei wird der kombinierte Ausdruck genau dann wahr (`True`) wenn der Ausdruck links und rechts (von `and`) wahr sind:
+
+```{python}
+False and False
+True and False
+False and True
+True and True
+(1 < 2) and (1 <= 2)
+```
+
