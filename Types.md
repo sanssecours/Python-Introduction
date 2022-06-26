@@ -255,43 +255,11 @@ Hierzu ein paar Beispiele:
 ```{python}
 not False
 not (1 >= 2)
+not 1 >= 2
 not not not True
 ```
 
-Die Klammern `()` im zweiten Ausdruck dienen dazu sicherzustellen, dass `1 >= 2` als erstes ausgewertet wird. Da `not` **stärker** wie Vergleichsoperatoren, wie `>=`, **bindet** und **Ausdrücke von links nach rechts** ausgewertet werden würde beim Ausdruck
-
-```python
-not 1 >= 2
-```
-
-als erstes `not 1` ausgewertet. Da jede Zahl außer `0` als wahr (`True`) interpretiert wird kann dieser Ausdruck auch als `not True` geschrieben werden. Das Ergebnis des Teilausdrucks ist also `False`:
-
-```{python}
-not 1
-```
-
-Dadurch ergibt sich der Ausdruck:
-
-```python
-False >= 2
-```
-
-Hierbei wird **implizit** `False` in `0` (und `True` in `1`) umgewandelt. Daduch ergibt sich der Ausdruck:
-
-```python
-0 >= 2
-```
-
-der den Wert `False` zurückliefert. Wir können unser Ergebnis nochmals überprüfen indem wir den Ausdruck ohne Klammern in den Interpreter eingeben:
-
-```{python}
-not 1 >= 2
-```
-
-Zu der impliziten Umwandlung von Zahlen in boolsche Ausdrücke ist noch zu sagen, dass man sich auf diese nicht verlassen sollte. Wie wir oben gesehen haben ist diese Auswertung nicht unbedingt intuitiv. Es macht Sinn
-
-- **Ausdrücke entweder** so zu **klammern**, dass keine Zahlen mit boolschen Ausdrücken verglichen werden, oder
-- Ausdrücke vorher **explizit** mittels den Funktionen`bool` in einen boolschen Ausruck oder mittels `int` in eine Zahl **umzuwandeln**.
+Die Klammern `()` im zweiten Ausdruck können dabei auch wegelassen werden, da `>=` stärker bindet – also vorher ausgewertet wird – wie `not`. Eine Liste der Prioritäten der verschiedenen Operatoren in Python, also welche Operatoren früher oder später ausgeführt werden findet sich z.B. [hier](https://docs.python.org/3/reference/expressions.html#operator-precedence).
 
 #### `and`
 
