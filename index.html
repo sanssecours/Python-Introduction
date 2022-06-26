@@ -21,7 +21,7 @@
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<link href="libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -421,7 +421,7 @@ Hello, World!</code></pre></li>
 <span id="cb36-4"><a href="#cb36-4"></a><span class="co"># 3</span></span>
 <span id="cb36-5"><a href="#cb36-5"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="co"># Argumente vor und nach Funktion/Operator (Infix-Notation)</span></span>
 <span id="cb36-6"><a href="#cb36-6"></a><span class="co"># 3</span></span></code></pre></div>
-<p>Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. <code>abs</code> und <code>-</code> gibt es noch viele andere Funktionen/Operatoren, die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion <code>add</code> aus dem Modul <code>operator</code> importiert wird.</p>
+<p>Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. <code>abs</code> und <code>-</code>, gibt es noch viele andere Funktionen/Operatoren, die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion <code>add</code> aus dem Modul <code>operator</code> importiert wird.</p>
 <p>Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen <code>#</code>. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu <strong>dokumentieren</strong></p>
 <ul>
 <li><p><strong>warum</strong> ein bestimmte Löung für ein Problem gewählt wurde</p></li>
@@ -574,38 +574,24 @@ Two</code></pre>
 <pre><code>True</code></pre>
 <div class="sourceCode" id="cb87"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1"></a><span class="kw">not</span> (<span class="dv">1</span> <span class="op">&gt;=</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>True</code></pre>
-<div class="sourceCode" id="cb89"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1"></a><span class="kw">not</span> <span class="kw">not</span> <span class="kw">not</span> <span class="va">True</span></span></code></pre></div>
-<pre><code>False</code></pre>
-<p>Die Klammern <code>()</code> im zweiten Ausdruck dienen dazu sicherzustellen, dass <code>1 &gt;= 2</code> als erstes ausgewertet wird. Da <code>not</code> <strong>stärker</strong> wie Vergleichsoperatoren, wie <code>&gt;=</code>, <strong>bindet</strong> und <strong>Ausdrücke von links nach rechts</strong> ausgewertet werden würde beim Ausdruck</p>
-<div class="sourceCode" id="cb91"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1"></a><span class="kw">not</span> <span class="dv">1</span> <span class="op">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
-<p>als erstes <code>not 1</code> ausgewertet. Da jede Zahl außer <code>0</code> als wahr (<code>True</code>) interpretiert wird kann dieser Ausdruck auch als <code>not True</code> geschrieben werden. Das Ergebnis des Teilausdrucks ist also <code>False</code>:</p>
-<div class="sourceCode" id="cb92"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1"></a><span class="kw">not</span> <span class="dv">1</span></span></code></pre></div>
-<pre><code>False</code></pre>
-<p>Dadurch ergibt sich der Ausdruck:</p>
-<div class="sourceCode" id="cb94"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb94-1"><a href="#cb94-1"></a><span class="va">False</span> <span class="op">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
-<p>Hierbei wird <strong>implizit</strong> <code>False</code> in <code>0</code> (und <code>True</code> in <code>1</code>) umgewandelt. Daduch ergibt sich der Ausdruck:</p>
-<div class="sourceCode" id="cb95"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1"></a><span class="dv">0</span> <span class="op">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
-<p>der den Wert <code>False</code> zurückliefert. Wir können unser Ergebnis nochmals überprüfen indem wir den Ausdruck ohne Klammern in den Interpreter eingeben:</p>
-<div class="sourceCode" id="cb96"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1"></a><span class="kw">not</span> <span class="dv">1</span> <span class="op">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb89"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1"></a><span class="kw">not</span> <span class="dv">1</span> <span class="op">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
 <pre><code>True</code></pre>
-<p>Zu der impliziten Umwandlung von Zahlen in boolsche Ausdrücke ist noch zu sagen, dass man sich auf diese nicht verlassen sollte. Wie wir oben gesehen haben ist diese Auswertung nicht unbedingt intuitiv. Es macht Sinn</p>
-<ul>
-<li><strong>Ausdrücke entweder</strong> so zu <strong>klammern</strong>, dass keine Zahlen mit boolschen Ausdrücken verglichen werden, oder</li>
-<li>Ausdrücke vorher <strong>explizit</strong> mittels den Funktionen<code>bool</code> in einen boolschen Ausruck oder mittels <code>int</code> in eine Zahl <strong>umzuwandeln</strong>.</li>
-</ul>
+<div class="sourceCode" id="cb91"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1"></a><span class="kw">not</span> <span class="kw">not</span> <span class="kw">not</span> <span class="va">True</span></span></code></pre></div>
+<pre><code>False</code></pre>
+<p>Die Klammern <code>()</code> im zweiten Ausdruck können dabei auch wegelassen werden, da <code>&gt;=</code> stärker bindet – also vorher ausgewertet wird – wie <code>not</code>. Eine Liste der Prioritäten der verschiedenen Operatoren in Python, also welche Operatoren früher oder später ausgeführt werden findet sich z.B. <a href="https://docs.python.org/3/reference/expressions.html#operator-precedence">hier</a>.</p>
 </div>
 <div id="and" class="section level4">
 <h4><span class="header-section-number">2.2.4.2</span> <code>and</code></h4>
 <p>Mittels des Operators <code>and</code> kann man zwei boolsche Ausdrücke miteinander verbinden. Dabei wird der kombinierte Ausdruck genau dann wahr (<code>True</code>) wenn der Ausdruck links und rechts (von <code>and</code>) wahr sind:</p>
-<div class="sourceCode" id="cb98"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1"></a><span class="va">False</span> <span class="kw">and</span> <span class="va">False</span></span></code></pre></div>
+<div class="sourceCode" id="cb93"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1"></a><span class="va">False</span> <span class="kw">and</span> <span class="va">False</span></span></code></pre></div>
 <pre><code>False</code></pre>
-<div class="sourceCode" id="cb100"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1"></a><span class="va">True</span> <span class="kw">and</span> <span class="va">False</span></span></code></pre></div>
+<div class="sourceCode" id="cb95"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1"></a><span class="va">True</span> <span class="kw">and</span> <span class="va">False</span></span></code></pre></div>
 <pre><code>False</code></pre>
-<div class="sourceCode" id="cb102"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb102-1"><a href="#cb102-1"></a><span class="va">False</span> <span class="kw">and</span> <span class="va">True</span></span></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb97-1"><a href="#cb97-1"></a><span class="va">False</span> <span class="kw">and</span> <span class="va">True</span></span></code></pre></div>
 <pre><code>False</code></pre>
-<div class="sourceCode" id="cb104"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb104-1"><a href="#cb104-1"></a><span class="va">True</span> <span class="kw">and</span> <span class="va">True</span></span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb99-1"><a href="#cb99-1"></a><span class="va">True</span> <span class="kw">and</span> <span class="va">True</span></span></code></pre></div>
 <pre><code>True</code></pre>
-<div class="sourceCode" id="cb106"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1"></a>(<span class="dv">1</span> <span class="op">&lt;</span> <span class="dv">2</span>) <span class="kw">and</span> (<span class="dv">1</span> <span class="op">&lt;=</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1"></a>(<span class="dv">1</span> <span class="op">&lt;</span> <span class="dv">2</span>) <span class="kw">and</span> (<span class="dv">1</span> <span class="op">&lt;=</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>True</code></pre>
 
 </div>
