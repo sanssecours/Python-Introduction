@@ -1,6 +1,6 @@
 bookdown::epub_book: default
 bookdown::html_book:
   split_by: none
-  theme: readable
+  theme: yeti
 bookdown::pdf_book:
   latex_engine: xelatex
