@@ -34,7 +34,7 @@ Einer der einfachsten Varianten von Ausdrücken sind Konstanten. Diese kennt man
 | `"1234"`           | `str` (Zeichenkette)     |
 | `'1234'`           | `str` (Zeichenkette)     |
 
-Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion type verwenden:
+Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion `type` verwenden:
 
 ```{python}
 type(True)
