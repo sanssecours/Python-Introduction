@@ -96,7 +96,7 @@ Dabei sollte man darauf achten **keine trivialen Kommentare** zu schreiben. Ein 
 1 + 2 # Die Ganzzahlen 1 und 2 werden addiert
 ```
 
-ist höchstens für absolute Programmierneulinge interessant. Das soll natürlich keine Aufforderung keine Kommentare zu schreiben. **Kommentare** und andere Form der **Dokumentation** sind ein **essentieller Teil guter Software**.
+ist höchstens für absolute Programmierneulinge interessant. Das soll natürlich keine Aufforderung sein keine Kommentare zu schreiben. **Kommentare** und andere Form der **Dokumentation** sind ein **essentieller Teil guter Software**.
 
 #### Argumente (Input) und Rückgabewerte (Output)
 
