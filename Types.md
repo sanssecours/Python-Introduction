@@ -65,7 +65,7 @@ Wie man bei der Funktion `min` sieht werden die Argumente einer Funktion in Pyth
 > - ❔ Um welche mathematische Operation handelt es sich bei `**`?
 > - ❔ Welchen Wert ermitteln die Funktionen `min`, `max` und `abs`?
 >
-> - ❔ Welche Typen haben die obigen Ausdrücke?
+> - ❔ Welche Typen haben die (Ergebnisse der) obigen Ausdrücke?
 
 Operationen wie `+` oder `**` können ebenfalls als Funktion angesehen werden, die
 
