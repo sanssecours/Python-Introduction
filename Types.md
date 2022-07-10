@@ -78,7 +78,7 @@ So gibt es neben dem Operator `+` z.B. auch eine Funktion mit mehr oder weniger 
 from operator import add # Funktion add importieren
 
 add(1, 2) # Argumente nach Funktion (Postfix-Notation)
-1 + 2 # Argumente vor und nach Funktion/Operator (Infix-Notation)
+1 + 2 # Argumente vor und nach Funktion (Infix-Notation)
 ```
 
 Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. `abs` und `-`, gibt es noch viele andere Funktionen/Operatoren, die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion `add` aus dem Modul `operator` importiert wird.
