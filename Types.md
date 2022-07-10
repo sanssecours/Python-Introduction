@@ -265,7 +265,7 @@ not 1 >= 2
 not not not True
 ```
 
-Die Klammern `()` im zweiten Ausdruck können dabei auch wegelassen werden, da `>=` stärker bindet – also vorher ausgewertet wird – wie `not`. Eine Liste der Prioritäten der verschiedenen Operatoren in Python, also welche Operatoren früher oder später ausgeführt werden findet sich z.B. [hier](https://docs.python.org/3/reference/expressions.html#operator-precedence).
+Die Klammern `()` im zweiten Ausdruck können dabei auch wegelassen werden, da `>=` stärker bindet – also vorher ausgewertet wird – wie `not`. Eine Liste der Prioritäten der verschiedenen Operatoren in Python, also welche Operatoren früher oder später ausgeführt werden, findet sich z.B. [hier](https://docs.python.org/3/reference/expressions.html#operator-precedence).
 
 #### `and`
 
