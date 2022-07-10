@@ -371,7 +371,7 @@ Hello, World!</code></pre></li>
 </tr>
 </tbody>
 </table>
-<p>Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion type verwenden:</p>
+<p>Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion <code>type</code> verwenden:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="bu">type</span>(<span class="va">True</span>)</span></code></pre></div>
 <pre><code>&lt;class &#39;bool&#39;&gt;</code></pre>
 <div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="bu">type</span>(<span class="dv">1234</span>)</span></code></pre></div>
@@ -406,7 +406,7 @@ Hello, World!</code></pre></li>
 <li><p>❔ Warum unterscheidet sich das Ergebnis des ersten und des zweiten Ausdrucks?</p></li>
 <li><p>❔ Um welche mathematische Operation handelt es sich bei <code>**</code>?</p></li>
 <li><p>❔ Welchen Wert ermitteln die Funktionen <code>min</code>, <code>max</code> und <code>abs</code>?</p></li>
-<li><p>❔ Welche Typen haben die obigen Ausdrücke?</p></li>
+<li><p>❔ Welche Typen haben die (Ergebnisse der) obigen Ausdrücke?</p></li>
 </ul>
 </blockquote>
 <p>Operationen wie <code>+</code> oder <code>**</code> können ebenfalls als Funktion angesehen werden, die</p>
@@ -419,18 +419,18 @@ Hello, World!</code></pre></li>
 <span id="cb36-2"><a href="#cb36-2"></a></span>
 <span id="cb36-3"><a href="#cb36-3"></a>add(<span class="dv">1</span>, <span class="dv">2</span>) <span class="co"># Argumente nach Funktion (Postfix-Notation)</span></span>
 <span id="cb36-4"><a href="#cb36-4"></a><span class="co"># 3</span></span>
-<span id="cb36-5"><a href="#cb36-5"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="co"># Argumente vor und nach Funktion/Operator (Infix-Notation)</span></span>
+<span id="cb36-5"><a href="#cb36-5"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="co"># Argumente vor und nach Funktion (Infix-Notation)</span></span>
 <span id="cb36-6"><a href="#cb36-6"></a><span class="co"># 3</span></span></code></pre></div>
 <p>Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. <code>abs</code> und <code>-</code>, gibt es noch viele andere Funktionen/Operatoren, die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion <code>add</code> aus dem Modul <code>operator</code> importiert wird.</p>
-<p>Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen <code>#</code>. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu <strong>dokumentieren</strong></p>
+<p>Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen <code>#</code>. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu <strong>dokumentieren</strong>,</p>
 <ul>
-<li><p><strong>warum</strong> ein bestimmte Löung für ein Problem gewählt wurde</p></li>
-<li><p>welche <strong>Probleme</strong> auftreten könnten oder auch</p></li>
-<li><p><strong>wie</strong> ein bestimmtes Problem gelöst wurde.</p></li>
+<li><p><strong>warum</strong> ein bestimmte Löung für ein Problem gewählt wurde,</p></li>
+<li><p>welche <strong>Probleme</strong> auftreten könnten oder</p></li>
+<li><p>auch <strong>wie</strong> ein bestimmtes Problem gelöst wurde.</p></li>
 </ul>
 <p>Dabei sollte man darauf achten <strong>keine trivialen Kommentare</strong> zu schreiben. Ein Kommentar wie z.B.</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="co"># Die Ganzzahlen 1 und 2 werden addiert</span></span></code></pre></div>
-<p>ist höchstens für absolute Programmierneulinge interessant. Das soll natürlich keine Aufforderung keine Kommentare zu schreiben. <strong>Kommentare</strong> und andere Form der <strong>Dokumentation</strong> sind ein <strong>essentieller Teil guter Software</strong>.</p>
+<p>ist höchstens für absolute Programmierneulinge interessant. Das soll natürlich keine Aufforderung sein keine Kommentare zu schreiben. <strong>Kommentare</strong> und andere Form der <strong>Dokumentation</strong> sind ein <strong>essentieller Teil guter Software</strong>.</p>
 <div id="argumente-input-und-rückgabewerte-output" class="section level4">
 <h4><span class="header-section-number">2.2.2.1</span> Argumente (Input) und Rückgabewerte (Output)</h4>
 <p>Jede Funktion in Python übernimmt eine <strong>bestimmte Anzahl von Argumenten</strong> und returniert <strong>einen Rückgabewert</strong>. Dabei ist zu beachten, dass die Anzahl von Argumenten auch 0 sein kann. Eine Funktion kann auch <code>None</code> retunieren. Dieser Wert vom Typ <code>NoneType</code> steht im Endeffekt für „keinen Wert“. Schauen wir uns die Eingabewerte von Funktionen und Operatoren an Hand von ein paar Beispielen an.</p>
@@ -471,10 +471,15 @@ Two</code></pre>
 <blockquote>
 <ul>
 <li><p>❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?</p></li>
-<li><p>❔ Welchen Type haben die Argumente und der Rückgabewert der Ausdrücke?</p></li>
+<li><p>❔ Welchen Typ haben die ausgewerten Ausdrücke?</p></li>
+<li><p>Falls die Ausdrücke Funktionen/Operatoren enthalten:</p>
+<ul>
+<li><p>❔ Welchen Typ haben die Argumente der verwendeten Funktionen/Operatoren?</p></li>
+<li><p>❔ Wie lautet der Typ des Rückgabewertes der ausgewerteten Funktionen/Operatoren?</p></li>
+</ul></li>
 </ul>
 <p>Versuche die Aufgabe als erstes <strong>im Kopf</strong> zu lösen und gib diese danach im Python-Interpreter ein um dein Ergebnis zu überprüfen.</p>
-<p>Welche Aufgaben dabei die noch nicht besprochenen Funktionen (wie z.B. <code>float</code>) übernehmen kannst du dabei feststellen indem du diese inklusive erster Klammer – also z.B. <code>float(</code> – in <code>ptpython</code> eingibst. Eine andere Möglichkeit ist in der <a href="https://docs.python.org">Python-Dokumentation</a> nach der jeweiligen Funktion zu suchen.</p>
+<p>Welche Aufgaben, die noch nicht besprochenen Funktionen (wie z.B. <code>float</code>) übernehmen, kannst du dabei feststellen indem du diese inklusive erster Klammer – also z.B. <code>float(</code> – in <code>ptpython</code> eingibst. Eine andere Möglichkeit ist in der <a href="https://docs.python.org">Python-Dokumentation</a> nach der jeweiligen Funktion zu suchen.</p>
 </blockquote>
 <div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1"></a><span class="dv">1</span></span>
 <span id="cb56-2"><a href="#cb56-2"></a><span class="fl">1.0</span></span>
@@ -555,7 +560,7 @@ Two</code></pre>
 </div>
 <div id="boolsche-operatoren" class="section level3">
 <h3><span class="header-section-number">2.2.4</span> Boolsche Operatoren</h3>
-<p>Boolsche Ausdrücke, also Ausdrücke die entweder den Wert <code>True</code> oder <code>False</code> annehmen sind ein wichtiger Bestandteil praktisch jedes Programms. Um Boolsche Ausdrücke miteinander zu kombinieren kann man boolsche Operatoren verwenden. Hier wollen wir kurz auf die wichtigsten dieser Operatoren:</p>
+<p>Boolsche Ausdrücke, also Ausdrücke die entweder den Wert <code>True</code> oder <code>False</code> annehmen sind ein wichtiger Bestandteil praktisch jedes Programms. Um boolsche Ausdrücke miteinander zu kombinieren kann man boolsche Operatoren verwenden. Hier wollen wir kurz auf die wichtigsten dieser Operatoren:</p>
 <ul>
 <li><code>not</code>,</li>
 <li><code>and</code>, und</li>
@@ -578,11 +583,11 @@ Two</code></pre>
 <pre><code>True</code></pre>
 <div class="sourceCode" id="cb91"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1"></a><span class="kw">not</span> <span class="kw">not</span> <span class="kw">not</span> <span class="va">True</span></span></code></pre></div>
 <pre><code>False</code></pre>
-<p>Die Klammern <code>()</code> im zweiten Ausdruck können dabei auch wegelassen werden, da <code>&gt;=</code> stärker bindet – also vorher ausgewertet wird – wie <code>not</code>. Eine Liste der Prioritäten der verschiedenen Operatoren in Python, also welche Operatoren früher oder später ausgeführt werden findet sich z.B. <a href="https://docs.python.org/3/reference/expressions.html#operator-precedence">hier</a>.</p>
+<p>Die Klammern <code>()</code> im zweiten Ausdruck können dabei auch wegelassen werden, da <code>&gt;=</code> stärker bindet – also vorher ausgewertet wird – wie <code>not</code>. Eine Liste der Prioritäten der verschiedenen Operatoren in Python, also welche Operatoren früher oder später ausgeführt werden, findet sich z.B. <a href="https://docs.python.org/3/reference/expressions.html#operator-precedence">hier</a>.</p>
 </div>
 <div id="and" class="section level4">
 <h4><span class="header-section-number">2.2.4.2</span> <code>and</code></h4>
-<p>Mittels des Operators <code>and</code> kann man zwei boolsche Ausdrücke miteinander verbinden. Dabei wird der kombinierte Ausdruck genau dann wahr (<code>True</code>) wenn der Ausdruck links und rechts (von <code>and</code>) wahr sind:</p>
+<p>Mittels des Operators <code>and</code> kann man zwei boolsche Ausdrücke miteinander verbinden. Dabei wird der kombinierte Ausdruck genau dann wahr (<code>True</code>) wenn die Ausdrücke links und rechts von <code>and</code> wahr sind:</p>
 <div class="sourceCode" id="cb93"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1"></a><span class="va">False</span> <span class="kw">and</span> <span class="va">False</span></span></code></pre></div>
 <pre><code>False</code></pre>
 <div class="sourceCode" id="cb95"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1"></a><span class="va">True</span> <span class="kw">and</span> <span class="va">False</span></span></code></pre></div>
@@ -593,6 +598,89 @@ Two</code></pre>
 <pre><code>True</code></pre>
 <div class="sourceCode" id="cb101"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1"></a>(<span class="dv">1</span> <span class="op">&lt;</span> <span class="dv">2</span>) <span class="kw">and</span> (<span class="dv">1</span> <span class="op">&lt;=</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>True</code></pre>
+<p>Den Umstand, dass <code>and</code> genau dann <code>True</code> zurückliefert wenn beide Operanden (Eingabewerte) von <code>and</code> den Wert <code>True</code> besitzen, kann man auch in einer sogenannte Wahrheitstabelle festhalten:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Linker Operand</th>
+<th>Rechter Operand</th>
+<th>Ergebnis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>False</code></td>
+<td><code>False</code></td>
+<td><code>False</code></td>
+</tr>
+<tr class="even">
+<td><code>False</code></td>
+<td><code>True</code></td>
+<td><code>False</code></td>
+</tr>
+<tr class="odd">
+<td><code>True</code></td>
+<td><code>False</code></td>
+<td><code>False</code></td>
+</tr>
+<tr class="even">
+<td><code>True</code></td>
+<td><code>True</code></td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="or" class="section level4">
+<h4><span class="header-section-number">2.2.4.3</span> <code>or</code></h4>
+<p>Im Gegensatz zu <code>and</code> werden zwei mit <code>or</code> verbundener Ausdrücke genau dann <code>True</code> wenn einer (oder beide) der Eingabe-Ausdrücke <code>True</code> sind:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Linker Operand</th>
+<th>Rechter Operand</th>
+<th>Ergebnis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>False</code></td>
+<td><code>False</code></td>
+<td><code>False</code></td>
+</tr>
+<tr class="even">
+<td><code>False</code></td>
+<td><code>True</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="odd">
+<td><code>True</code></td>
+<td><code>False</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td><code>True</code></td>
+<td><code>True</code></td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+<p>Dazu wieder ein paar Beispiele:</p>
+<div class="sourceCode" id="cb103"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1"></a><span class="va">False</span> <span class="kw">or</span> <span class="va">False</span></span></code></pre></div>
+<pre><code>False</code></pre>
+<div class="sourceCode" id="cb105"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb105-1"><a href="#cb105-1"></a>(<span class="dv">1</span> <span class="op">&lt;</span> <span class="dv">2</span>) <span class="kw">or</span> (<span class="dv">1</span> <span class="op">&gt;</span> <span class="dv">2</span>)</span></code></pre></div>
+<pre><code>True</code></pre>
+<div class="sourceCode" id="cb107"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb107-1"><a href="#cb107-1"></a>(<span class="va">True</span> <span class="kw">and</span> <span class="va">False</span>) <span class="kw">or</span> <span class="va">False</span></span></code></pre></div>
+<pre><code>False</code></pre>
+<p>Zum Abschluss wollen wir hier ein paar zusammengesetzte Audrücke als erstes im Kopf und dann in einer Python-REPL auswerten.</p>
+<blockquote>
+<p>• ❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?</p>
+<p>• ❔ In welcher Reihenfolge werden die Teilausdrücke ausgewertet?</p>
+<p>• ❔ In welchen Fall kann man bei den Operatoren <code>and</code> und <code>or</code> auf eine Auswertrung eines der Operanden verzichten wenn man das Ergbenis des anderen Operand schon kennt?</p>
+</blockquote>
+<div class="sourceCode" id="cb109"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1"></a>(<span class="dv">5</span> <span class="op">+</span> <span class="dv">6</span> <span class="op">&lt;=</span> <span class="dv">10</span>) <span class="kw">or</span> (<span class="va">True</span> <span class="kw">and</span> <span class="va">True</span>)</span>
+<span id="cb109-2"><a href="#cb109-2"></a>(<span class="dv">10</span> <span class="op">*</span> <span class="dv">6</span> <span class="op">==</span> <span class="dv">60</span>) <span class="kw">and</span> <span class="kw">not</span> (<span class="dv">10</span> <span class="op">&lt;</span> <span class="dv">10</span>)</span>
+<span id="cb109-3"><a href="#cb109-3"></a><span class="va">True</span> <span class="kw">and</span> <span class="va">False</span> <span class="kw">or</span> <span class="kw">not</span> <span class="va">False</span></span></code></pre></div>
 
 </div>
 </div>
