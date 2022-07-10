@@ -241,7 +241,7 @@ vergleichen.
 
 ### Boolsche Operatoren
 
-Boolsche Ausdrücke, also Ausdrücke die entweder den Wert `True` oder `False` annehmen sind ein wichtiger Bestandteil praktisch jedes Programms. Um Boolsche Ausdrücke miteinander zu kombinieren kann man boolsche Operatoren verwenden. Hier wollen wir kurz auf die wichtigsten dieser Operatoren:
+Boolsche Ausdrücke, also Ausdrücke die entweder den Wert `True` oder `False` annehmen sind ein wichtiger Bestandteil praktisch jedes Programms. Um boolsche Ausdrücke miteinander zu kombinieren kann man boolsche Operatoren verwenden. Hier wollen wir kurz auf die wichtigsten dieser Operatoren:
 
 - `not`,
 - `and`, und
