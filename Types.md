@@ -269,7 +269,7 @@ Die Klammern `()` im zweiten Ausdruck können dabei auch wegelassen werden, da `
 
 #### `and`
 
-Mittels des Operators `and` kann man zwei boolsche Ausdrücke miteinander verbinden. Dabei wird der kombinierte Ausdruck genau dann wahr (`True`) wenn der Ausdruck links und rechts (von `and`) wahr sind:
+Mittels des Operators `and` kann man zwei boolsche Ausdrücke miteinander verbinden. Dabei wird der kombinierte Ausdruck genau dann wahr (`True`) wenn die Ausdrücke links und rechts von `and` wahr sind:
 
 ```{python}
 False and False
@@ -278,3 +278,46 @@ False and True
 True and True
 (1 < 2) and (1 <= 2)
 ```
+
+Den Umstand, dass `and` genau dann `True` zurückliefert wenn beide Operanden (Eingabewerte) von `and` den Wert `True` besitzen, kann man auch in einer sogenannte Wahrheitstabelle festhalten:
+
+| Linker Operand | Rechter Operand | Ergebnis |
+| -------------- | --------------- | -------- |
+| `False`        | `False`         | `False`  |
+| `False`        | `True`          | `False`  |
+| `True`         | `False`         | `False`  |
+| `True`         | `True`          | `True`   |
+
+#### `or`
+
+Im Gegensatz zu `and` werden zwei mit `or` verbundener Ausdrücke genau dann `True` wenn einer (oder beide) der Eingabe-Ausdrücke `True` sind:
+
+| Linker Operand | Rechter Operand | Ergebnis |
+| -------------- | --------------- | -------- |
+| `False`        | `False`         | `False`  |
+| `False`        | `True`          | `True`   |
+| `True`         | `False`         | `True`   |
+| `True`         | `True`          | `True`   |
+
+Dazu wieder ein paar Beispiele:
+
+```{python}
+False or False
+(1 < 2) or (1 > 2)
+(True and False) or False
+```
+
+Zum Abschluss wollen wir hier ein paar zusammengesetzte Audrücke als erstes im Kopf und dann in einer Python-REPL auswerten.
+
+> • ❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?
+>
+> • ❔ In welcher Reihenfolge werden die Teilausdrücke ausgewertet?
+>
+> • ❔ In welchen Fall kann man bei den Operatoren `and` und `or` auf eine Auswertrung eines der Operanden verzichten wenn man das Ergbenis des anderen Operand schon kennt?  
+
+```python
+(5 + 6 <= 10) or (True and True)
+(10 * 6 == 60) and not (10 < 10)
+True and False or not False
+```
+
