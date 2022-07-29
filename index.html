@@ -337,7 +337,7 @@ Hello, World!</code></pre></li>
 </div>
 <div id="ausdrücke" class="section level2">
 <h2><span class="header-section-number">2.2</span> Ausdrücke</h2>
-<p>Bei einem Ausdruck (<code>Expression</code>) handelt es sich um ein (üblicherweise relativ kurzes) Stück Code, dass ausgewertet werden kann und dann ein bestimmtes Ergebnis eines bestimmten Datentyps liefert.</p>
+<p>Bei einem <strong>Ausdruck</strong> (<code>Expression</code>) handelt es sich um ein (üblicherweise relativ kurzes) Stück Code, dass ausgewertet werden kann und dann ein bestimmtes Ergebnis eines bestimmten <strong>Datentyps</strong> liefert.</p>
 <div id="konstanten" class="section level3">
 <h3><span class="header-section-number">2.2.1</span> Konstanten</h3>
 <p>Einer der einfachsten Varianten von Ausdrücken sind Konstanten. Diese kennt man eventuell auch schon aus dem Mathematik-Unterricht. Hier mal ein paar Beispiele:</p>
@@ -371,7 +371,7 @@ Hello, World!</code></pre></li>
 </tr>
 </tbody>
 </table>
-<p>Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion <code>type</code> verwenden:</p>
+<p>Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die <strong>Funktion</strong> <code>type</code> verwenden:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="bu">type</span>(<span class="va">True</span>)</span></code></pre></div>
 <pre><code>&lt;class &#39;bool&#39;&gt;</code></pre>
 <div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="bu">type</span>(<span class="dv">1234</span>)</span></code></pre></div>
@@ -385,7 +385,7 @@ Hello, World!</code></pre></li>
 </div>
 <div id="funktionen-und-operatoren" class="section level3">
 <h3><span class="header-section-number">2.2.2</span> Funktionen und Operatoren</h3>
-<p>Diverse Funtkionen wie z.B. <code>abs</code>, <code>min</code> und Operatoren wie z.B. <code>+</code>, <code>-</code> , <code>**</code> (Potzenz) können ebenfalls Teil eines Ausdrucks sein.</p>
+<p>Diverse Funktionen wie z.B. <code>abs</code>, <code>min</code> und Operatoren wie z.B. <code>+</code>, <code>-</code> , <code>**</code> (Potzenz) können ebenfalls Teil eines Ausdrucks sein.</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"></a><span class="dv">1</span><span class="op">+</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>3</code></pre>
 <div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1"></a><span class="co">&quot;1&quot;</span> <span class="op">+</span> <span class="st">&quot;2&quot;</span></span></code></pre></div>
@@ -422,7 +422,7 @@ Hello, World!</code></pre></li>
 <span id="cb36-5"><a href="#cb36-5"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="co"># Argumente vor und nach Funktion (Infix-Notation)</span></span>
 <span id="cb36-6"><a href="#cb36-6"></a><span class="co"># 3</span></span></code></pre></div>
 <p>Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. <code>abs</code> und <code>-</code>, gibt es noch viele andere Funktionen/Operatoren, die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion <code>add</code> aus dem Modul <code>operator</code> importiert wird.</p>
-<p>Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen <code>#</code>. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu <strong>dokumentieren</strong>,</p>
+<p>Ein weitere Neuerung im obigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen <code>#</code>. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu <strong>dokumentieren</strong>,</p>
 <ul>
 <li><p><strong>warum</strong> ein bestimmte Löung für ein Problem gewählt wurde,</p></li>
 <li><p>welche <strong>Probleme</strong> auftreten könnten oder</p></li>
@@ -470,12 +470,12 @@ Hello, World!</code></pre></li>
 Two</code></pre>
 <blockquote>
 <ul>
-<li><p>❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?</p></li>
-<li><p>❔ Welchen Typ haben die ausgewerten Ausdrücke?</p></li>
+<li><p>❔ Wie lautet das <strong>Ergebnis</strong> der untenstehenden Ausdrücke?</p></li>
+<li><p>❔ Welchen <strong>Typ</strong> haben die ausgewerten Ausdrücke?</p></li>
 <li><p>Falls die Ausdrücke Funktionen/Operatoren enthalten:</p>
 <ul>
-<li><p>❔ Welchen Typ haben die Argumente der verwendeten Funktionen/Operatoren?</p></li>
-<li><p>❔ Wie lautet der Typ des Rückgabewertes der ausgewerteten Funktionen/Operatoren?</p></li>
+<li><p>❔ Welchen <strong>Typ</strong> haben die <strong>Argumente</strong> der verwendeten Funktionen/Operatoren?</p></li>
+<li><p>❔ Wie lautet der <strong>Typ</strong> des <strong>Rückgabewertes</strong> der ausgewerteten Funktionen/Operatoren?</p></li>
 </ul></li>
 </ul>
 <p>Versuche die Aufgabe als erstes <strong>im Kopf</strong> zu lösen und gib diese danach im Python-Interpreter ein um dein Ergebnis zu überprüfen.</p>
