@@ -20,7 +20,7 @@ verwenden und uns mit der Bedienung davon ein wenig vertraut machen. Wie wir im 
 
 ## Ausdrücke
 
-Bei einem Ausdruck (`Expression`) handelt es sich um ein (üblicherweise relativ kurzes) Stück Code, dass ausgewertet werden kann und dann ein bestimmtes Ergebnis eines bestimmten Datentyps liefert.
+Bei einem **Ausdruck** (`Expression`) handelt es sich um ein (üblicherweise relativ kurzes) Stück Code, dass ausgewertet werden kann und dann ein bestimmtes Ergebnis eines bestimmten **Datentyps** liefert.
 
 ### Konstanten
 
@@ -34,7 +34,7 @@ Einer der einfachsten Varianten von Ausdrücken sind Konstanten. Diese kennt man
 | `"1234"`           | `str` (Zeichenkette)     |
 | `'1234'`           | `str` (Zeichenkette)     |
 
-Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die Funktion `type` verwenden:
+Um heraus zu finden welchen Typ ein bestimmter Ausdruck hat kann man die **Funktion** `type` verwenden:
 
 ```{python}
 type(True)
@@ -46,7 +46,7 @@ type('1234')
 
 ### Funktionen und Operatoren
 
-Diverse Funtkionen wie z.B. `abs`, `min` und Operatoren wie z.B. `+`, `-` , `**` (Potzenz) können ebenfalls Teil eines Ausdrucks sein.
+Diverse Funktionen wie z.B. `abs`, `min` und Operatoren wie z.B. `+`, `-` , `**` (Potzenz) können ebenfalls Teil eines Ausdrucks sein.
 
 ```{python}
 1+2
@@ -83,7 +83,7 @@ add(1, 2) # Argumente nach Funktion (Postfix-Notation)
 
 Neben den von Haus aus sichtbaren Funktionen/Operatoren, wie z.B. `abs` und `-`, gibt es noch viele andere Funktionen/Operatoren, die erst importiert werden müssen bevor man sie verwenden kann. Ein Beispiel dafür sehen wir in der ersten Zeile des obigen Codeblocks in dem die Funktion `add` aus dem Modul `operator` importiert wird.
 
-Ein weitere Neuerung im obrigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen `#`. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu **dokumentieren**,
+Ein weitere Neuerung im obigen Text sind Kommentare. Diese beginnen in Python mit dem Zeichen `#`. Der Text hinter diesem Zeichen (bis zum Zeilenende) wird vom Interpreter ignoriert. Kommentare dienen z.B. dazu zu **dokumentieren**,
 
 - **warum** ein bestimmte Löung für ein Problem gewählt wurde,
 
