@@ -148,14 +148,14 @@ print()
 print("Two")
 ```
 
-> - ❔ Wie lautet das Ergebnis der untenstehenden Ausdrücke?
+> - ❔ Wie lautet das **Ergebnis** der untenstehenden Ausdrücke?
 >
-> - ❔ Welchen Typ haben die ausgewerten Ausdrücke?
+> - ❔ Welchen **Typ** haben die ausgewerten Ausdrücke?
 >
 > - Falls die Ausdrücke Funktionen/Operatoren enthalten:
->   - ❔ Welchen Typ haben die Argumente der verwendeten Funktionen/Operatoren?
+>   - ❔ Welchen **Typ** haben die **Argumente** der verwendeten Funktionen/Operatoren?
 >
->   - ❔ Wie lautet der Typ des Rückgabewertes der ausgewerteten Funktionen/Operatoren? 
+>   - ❔ Wie lautet der **Typ** des **Rückgabewertes** der ausgewerteten Funktionen/Operatoren? 
 >
 >
 > Versuche die Aufgabe als erstes **im Kopf** zu lösen und gib diese danach im Python-Interpreter ein um dein Ergebnis zu überprüfen.
